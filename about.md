@@ -1,18 +1,6 @@
 ---
-layout: page
-title: About
-permalink: /about/
+layout: default
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+# About
+Psi Beta Rho is UCLA's competetive cybersecurity team! We compete in CTFs or Capture the Flag events, where we solve cybersecurity challenges to earn points! We are a group of hackers, programmers, and security enthusiasts who love to learn and compete. We are always looking for new members, so if you are interested in joining, please contact us!
