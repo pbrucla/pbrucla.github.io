@@ -3,8 +3,19 @@ layout: default
 ---
 
 <article>
-    <h1>{{ page.title }}</h1>
-    <em>{{ page.date | date: "%B %-d, %Y" }}</em>
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-author-date"><b>{{ page.author }}</b><em> - {{ page.date | date: "%B %-d, %Y" }}</em></p>
+
+
+    <div class="tags">
+
+        <strong>Categories: </strong>
+
+        {% for tag in page.tags %}
+        <span>{{tag}}</span>
+        {% endfor %}
+
+    </div>
 
     <hr>
 
