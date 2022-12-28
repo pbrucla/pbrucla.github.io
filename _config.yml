@@ -6,4 +6,12 @@ description: >-
   Google search results) and in your feed.xml site description.
 baseurl: "/"
 url: "https://pbr.uclaacm.com"
-github_username:  pbrucla
+github: pbrucla
+twitter: pbrucla
+
+sass:
+  sass_dir: assets/styles
+
+exclude:
+- README.md
+- .github/

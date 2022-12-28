@@ -1,5 +1,11 @@
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+---
+---
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #6B6B6B;
+    color: #FFFFFF;
 }
+
+@import 'footer', 'nav', 'post';
