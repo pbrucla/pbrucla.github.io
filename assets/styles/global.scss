@@ -4,8 +4,29 @@ html,
 body {
     margin: 0;
     padding: 0;
-    background-color: #6B6B6B;
+    background-color: #2C2C2C;
     color: #FFFFFF;
+    font-family: 'IBM Plex Mono', 'Consolas', 'Lucida Console', monospace;
+}
+
+article {
+    margin: 0 5rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+hr {
+    margin: 2rem 0;
+}
+
+h1 {
+    color: #FFBD3F;
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 0 5rem;
 }
 
 @import 'footer', 'nav', 'post';

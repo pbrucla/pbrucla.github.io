@@ -1,0 +1,25 @@
+---
+layout: default
+title: Blog
+description: articles, writeups, and other snippets of writing
+---
+<h1>Blog</h1>
+
+<ul class="blog-cards">
+    {% for post in site.posts %}
+    <li>
+        <a href="{{post.url | absolute_url}}">
+            <div class="card-title">{{ post.title }}</div>
+            <div class="card-date-author">{{ post.date | date: "%B %-d, %Y" }} - {{ post.author }}</div>
+            <div class="tags">
+                {% for tag in post.tags %}
+                <span>{{tag}}</span>
+                {% endfor %}
+            </div>
+            <p class="card-summary">{{ post.summary | strip_html | newline_to_br | strip_newlines | replace: '<br />', '
+                ' | strip_html |
+                strip | truncate: 200 }}</p>
+        </a>
+    </li>
+    {% endfor %}
+</ul>
