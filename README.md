@@ -35,8 +35,8 @@ git add .
 git commit -m "Description of your changes"
 git push
 ```
-6. Make a [pull request](https://github.com/pbrucla/pbrucla.github.io/pulls) with your changes, and let a project lead know.
-7. If your code passes code review, then we can merge it into `main`. Congratulations! If you'd like, it's now safe to delete your branch.
+5. Make a [pull request](https://github.com/pbrucla/pbrucla.github.io/pulls) with your changes, and let a project lead know.
+6. If your code passes code review, then we can merge it into `main`. Congratulations! If you'd like, it's now safe to delete your branch.
 
 ## Contact
 Email: uclacyber@gmail.com

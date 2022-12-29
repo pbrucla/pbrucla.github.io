@@ -2,7 +2,6 @@
 layout: post
 title: "Sample Article 1"
 author: Cybrick McCyber
-categories: articles
 tags: web forensics
 summary: "This is a summary of sample article 1." # 200 char max
 ---

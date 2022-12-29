@@ -2,7 +2,6 @@
 layout: post
 title: "Sample Writeup 1"
 author: Cyber McCybean
-categories: writeups
 tags: forensics cryptography
 summary: "This is a summary of sample writeup 1." # 200 char max
 ---
