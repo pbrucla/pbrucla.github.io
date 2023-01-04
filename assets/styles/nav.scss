@@ -1,9 +1,31 @@
 nav {
-    background-color: black;
+    background-color: #6B6B6B;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 10%;
 
     ul {
+        display: flex;
+        flex-direction: column;
         list-style-type: none;
         margin: 0;
-        padding: 0;
+        padding: 2em;
+        align-items: center;
+
+        li {
+            margin: 0.5em;
+
+            a {
+                color: #FFFFFF;
+                text-decoration: none;
+                text-align: center;
+            }
+
+            a:hover {
+                color: #FFBD3F;
+            }
+        }
     }
 }

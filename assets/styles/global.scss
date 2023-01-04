@@ -1,11 +1,17 @@
 ---
 ---
+@font-face {
+    font-family: "IBM Plex Mono";
+    src:url("../fonts/IBMPlexMono-Regular.ttf");
+}
+
 html,
 body {
     margin: 0;
     padding: 0;
-    background-color: #6B6B6B;
+    background-color: #2C2C2C;
     color: #FFFFFF;
+    font-family: 'IBM Plex Mono';
 }
 
-@import 'footer', 'nav', 'post';
+@import 'footer', 'nav', 'post', 'main';
