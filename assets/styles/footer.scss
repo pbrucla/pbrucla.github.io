@@ -1,3 +1,15 @@
 footer {
-    background: black;
+    background-color: #6B6B6B;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 10%;
+    font-size: 1.5vw;
+
+    p {
+        position: absolute;
+        bottom: 0;
+        padding: 0.2rem 1.5vw;
+    }
 }

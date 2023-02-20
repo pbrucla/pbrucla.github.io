@@ -1,5 +1,8 @@
 ---
 ---
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 html,
 body {
     margin: 0;
@@ -29,4 +32,4 @@ h1 {
     margin: 0 5rem;
 }
 
-@import 'footer', 'nav', 'post';
+@import 'footer', 'nav', 'post', 'main';
