@@ -1,0 +1,7 @@
+- name: Cyber McCybean
+  github: uclaacm
+  role: pwn
+
+- name: Cyber McCybean
+  github: uclaacm
+  role: web

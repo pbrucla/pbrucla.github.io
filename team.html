@@ -1,0 +1,18 @@
+---
+layout: default
+title: Team
+description: The team members of Psi Beta Rho!
+---
+
+<h1>Team</h1>
+<p>Here are some members of the PBR team!</p>
+
+<ul>
+    {% for member in site.data.members %}
+        <li>
+            <a href="https://github.com/{{ member.github }}">
+                {{ member.name }}
+            </a>, {{ member.role }}
+        </li>
+    {% endfor %}
+</ul>
