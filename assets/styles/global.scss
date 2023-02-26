@@ -32,4 +32,8 @@ h1 {
     margin: 0 5rem;
 }
 
+img {
+    max-width: 100%;
+}
+
 @import 'footer', 'nav', 'post', 'main';
