@@ -2,7 +2,7 @@
 layout: default
 ---
 
-![Our team at a Boba Social Night!](assets/images/PBR_Boba_Social.jpg "Our team at a Boba Social Night!")
+![Our team at a Boba Social Night!](assets/images/pbr-boba-social.jpg "Our team at a Boba Social Night!")
 
 # Welcome to PBR!
 
