@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 ![Our team sporting PBR merch!](/assets/images/pbr-point-five.jpg "Our team sporting PBR merch!")
 
 # About
