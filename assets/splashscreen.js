@@ -7,18 +7,22 @@ var i = 0;
 runner();
 
 function runner() {
-    textarea.append(text.charAt(i));
-    i++;
-    setTimeout(
-        function () {
-            if (i < text.length)
-                runner();
-            else {
-                textarea.append("<br>")
-                i = 0;
-                setTimeout(function () { feedbacker(); }, 1000);
-            }
-        }, Math.floor(Math.random() * 200) + 1); // prompt typing speed (in ms)
+    if(window.sessionStorage.getItem('visited') === null){
+        textarea.append(text.charAt(i));
+        i++;
+        setTimeout(
+            function () {
+                if (i < text.length)
+                    runner();
+                else {
+                    textarea.append("<br>")
+                    i = 0;
+                    setTimeout(function () { feedbacker(); }, 1000);
+                }
+            }, Math.floor(Math.random() * 200) + 1); // prompt typing speed (in ms)
+    } else {
+        $(".load").fadeOut(0);
+    }
 }
 
 var time = 1;
@@ -38,11 +42,12 @@ function feedbacker() {
     time = Math.floor(Math.random() * 4) + 1; // output speed (in ms)
     setTimeout(
         function () {
-            if (i < output.length - 2 && i < window.innerHeight) // stop once screen is filled
+            if (i < output.length - 2 && i < Math.max(window.innerHeight, document.body.scrollHeight+70)) // stop once screen is filled
                 feedbacker();
             else { // clear splash screen and show Home page
                 textarea.append("Starting now...<br>");
                 setTimeout(function () { $(".load").fadeOut(1000); }, 2000);
+                window.sessionStorage.setItem('visited', true);
             }
         }, time);
 }
