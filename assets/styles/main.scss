@@ -1,10 +1,18 @@
 .content {
     margin-left: 10rem;
 
-    main,
-    article {
+    main {
         padding: 5rem 10%;
         min-height: 50rem;
+
+        img {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            max-height: 60vh;
+            object-fit: cover;
+        }
     }
 }
 
@@ -18,13 +26,30 @@
     .member-flex-item {
         margin: 1.5% 6%;
         max-width: 21%;
-        font-size: 120%;
-        line-height: 250%;
         text-align: center;
+
+        p {
+            margin: 0.5rem 0;
+            padding: 0;
+        }
+
+        .member-name {
+            font-size: 200%;
+        }
+
+        .member-role {
+            font-size: 100%;
+        }
+
+
     }
     
     .logo {
         max-width: 20%;
+        // counteracts the global image styling
+        margin-left: none;
+        margin-right: none;
+        display: inline-block;
     }
 
     a {
