@@ -13,8 +13,12 @@ body {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline #FFBD3F;
     color: white;
+}
+
+a:hover {
+    color: #FFBD3F;
 }
 
 hr {

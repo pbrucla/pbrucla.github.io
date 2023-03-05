@@ -3,7 +3,7 @@
 
     main,
     article {
-        padding: 5rem;
+        padding: 5rem 10%;
         min-height: 50rem;
     }
 }
@@ -25,5 +25,13 @@
     
     .logo {
         max-width: 20%;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .profile-image {
+        border-radius: 50%;
     }
 }
