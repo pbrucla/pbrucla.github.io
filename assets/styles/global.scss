@@ -12,10 +12,6 @@ body {
     font-family: 'IBM Plex Mono', 'Consolas', 'Lucida Console', monospace;
 }
 
-article {
-    margin: 0 5rem;
-}
-
 a {
     text-decoration: none;
     color: white;
@@ -37,24 +33,5 @@ img {
     max-height: 60vh;
     object-fit: cover;
 }
-
-.flex-container {
-    display: flex;
-    margin: 3%;
-    flex-wrap: wrap;
-}
-
-#flex-item {
-    margin: 6%;
-    max-width: 21%;
-    font-size: 120%;
-    line-height: 250%;
-    text-align: center;
-}
-
-#logo {
-    max-width: 20%;
-}
-
 
 @import 'footer', 'nav', 'post', 'main';

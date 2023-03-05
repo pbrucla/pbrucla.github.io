@@ -7,28 +7,28 @@ description: The team members of Psi Beta Rho!
 <h1>Meet the Team</h1>
 <p>Here are some members of the PBR team!</p>
 
-<div class="flex-container">
+<div class="team-flex-container">
     {% for member in site.data.members %}
-        <div id="flex-item">
+        <div class="member-flex-item">
             <img src="assets/images/{{ member.photo }}" />
             <br>
             {{ member.name }}, {{ member.role }}
             <br>
             {% if member.github != null %}
             <a href="https://github.com/{{ member.github }}">
-                <img id="logo" src="assets/images/github.png" />
+                <img class="logo" src="assets/images/github.png" />
             </a>
             {% endif %}
 
             {% if member.linkedin != null %}
             <a href="https://linkedin.com/in/{{ member.linkedin }}">
-                <img id="logo" src="assets/images/linkedin.png" />
+                <img class="logo" src="assets/images/linkedin.png" />
             </a>
             {% endif %}
 
             {% if member.instagram != null %}
             <a href="https://instagram.com/{{ member.instagram }}">
-                <img id="logo" src="assets/images/instagram.png" />
+                <img class="logo" src="assets/images/instagram.png" />
             </a>
             {% endif %}
             
