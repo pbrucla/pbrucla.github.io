@@ -1,0 +1,59 @@
+---
+
+---
+<link rel="stylesheet" href="{{ "assets/styles/splashscreen.css" | relative_url }}">
+
+<style>
+    pre {
+        padding: 0;
+        margin: 0;
+    }
+
+    .load {
+        margin: 0 auto;
+        width: 100%;
+        height: 200%;
+        position: absolute;
+    }
+
+    .term {
+        font-family: monospace;
+        /* color: rgb(205, 205, 205); */
+        font-size: 2.1vw;
+        opacity: 0.8;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 0 1rem;
+    }
+
+    .term:after {
+        content: "_";
+        opacity: 1;
+        animation: cursor 1s infinite;
+    }
+
+    @keyframes cursor {
+        0% {
+            opacity: 0;
+        }
+        40% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        90% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+</style>
+
+<div class="load">
+    <pre class="term">pbr@ucla:~$ </pre>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="splashscreen.js"></script>
+</div>
