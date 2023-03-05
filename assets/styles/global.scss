@@ -1,6 +1,11 @@
 ---
 ---
 
+<<<<<<< HEAD
+=======
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+>>>>>>> main
 html,
 body {
   margin: 0;
@@ -10,6 +15,7 @@ body {
   font-family: "IBM Plex Mono", "Consolas", "Lucida Console", monospace;
 }
 
+<<<<<<< HEAD
 article {
   margin: 0 5rem;
 }
@@ -17,6 +23,15 @@ article {
 a {
   text-decoration: none;
   color: white;
+=======
+a {
+    text-decoration: underline #FFBD3F;
+    color: white;
+}
+
+a:hover {
+    color: #FFBD3F;
+>>>>>>> main
 }
 
 hr {
@@ -24,6 +39,7 @@ hr {
 }
 
 h1 {
+<<<<<<< HEAD
   color: #ffbd3f;
   font-size: 5rem;
   font-weight: bold;
@@ -31,3 +47,12 @@ h1 {
 }
 
 @import "footer", "nav", "post", "splashscreen";
+=======
+    color: #FFBD3F;
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 1rem 0rem;
+}
+
+@import 'footer', 'nav', 'post', 'main';
+>>>>>>> main

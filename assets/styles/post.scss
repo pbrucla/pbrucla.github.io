@@ -1,21 +1,25 @@
 ul.blog-cards {
     list-style: none;
     padding: 0;
-}
 
-ul.blog-cards>li {
-    padding: 2rem;
-    margin: 2rem 5rem;
-    border-radius: 0.5rem;
-    background-color: #565656;
-    transition: box-shadow .2s;
-}
+    a {
+        text-decoration: none;
+    }
 
-ul.blog-cards>li:hover {
-    box-shadow: 0 0 6px #FFBD3F;
+    li {
+        padding: 2rem;
+        margin: 2rem 5rem;
+        border-radius: 0.5rem;
+        background-color: #565656;
+        transition: box-shadow .2s;
+    }
 
-    .card-title {
-        text-decoration: underline #FFBD3F 2px;
+    li:hover {
+        box-shadow: 0 0 6px #FFBD3F;
+    
+        .card-title {
+            text-decoration: underline #FFBD3F 2px;
+        }
     }
 }
 

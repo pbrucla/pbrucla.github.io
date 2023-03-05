@@ -1,0 +1,25 @@
+- name: Benson Liu
+  photo: bliutech.png
+  role: director & web
+  website: https://bliu.tech
+  github: bliutech
+  linkedin: bliutech
+
+- name: Person 2
+  role: web
+  github: uclaacm
+
+- name: Person 3
+  role: pwn
+  linkedin: test1
+
+- name: Person 4
+  role: web
+  github: uclaacm
+  linkedin: test2
+
+- name: Person 5
+  role: pwn
+  github: uclaacm
+  linkedin: test1
+

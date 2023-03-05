@@ -1,0 +1,24 @@
+name: Test Jekyll Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    types: [opened, reopened]
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        ruby: [3.1.0]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: ${{ matrix.ruby }}
+        bundler-cache: true
+
+    - run: bundle install
+    - run: bundle exec jekyll build
