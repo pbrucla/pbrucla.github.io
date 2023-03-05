@@ -38,4 +38,23 @@ img {
     object-fit: cover;
 }
 
+.flex-container {
+    display: flex;
+    margin: 3%;
+    flex-wrap: wrap;
+}
+
+#flex-item {
+    margin: 6%;
+    max-width: 21%;
+    font-size: 120%;
+    line-height: 250%;
+    text-align: center;
+}
+
+#logo {
+    max-width: 20%;
+}
+
+
 @import 'footer', 'nav', 'post', 'main';

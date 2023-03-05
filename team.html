@@ -4,15 +4,36 @@ title: Team
 description: The team members of Psi Beta Rho!
 ---
 
-<h1>Team</h1>
+<h1>Meet the Team</h1>
 <p>Here are some members of the PBR team!</p>
 
-<ul>
+<div class="flex-container">
     {% for member in site.data.members %}
-        <li>
+        <div id="flex-item">
+            <img src="assets/images/{{ member.photo }}" />
+            <br>
+            {{ member.name }}, {{ member.role }}
+            <br>
+            {% if member.github != null %}
             <a href="https://github.com/{{ member.github }}">
-                {{ member.name }}
-            </a>, {{ member.role }}
-        </li>
+                <img id="logo" src="assets/images/github.png" />
+            </a>
+            {% endif %}
+
+            {% if member.linkedin != null %}
+            <a href="https://linkedin.com/in/{{ member.linkedin }}">
+                <img id="logo" src="assets/images/linkedin.png" />
+            </a>
+            {% endif %}
+
+            {% if member.instagram != null %}
+            <a href="https://instagram.com/{{ member.instagram }}">
+                <img id="logo" src="assets/images/instagram.png" />
+            </a>
+            {% endif %}
+            
+            <br>
+            
+        </div>
     {% endfor %}
-</ul>
+</div>
