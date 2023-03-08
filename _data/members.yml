@@ -5,9 +5,10 @@
   github: bliutech
   linkedin: bliutech
 
-- name: Person 2
-  role: web
-  github: uclaacm
+- name: Alec Machlis
+  role: team captain
+  github: burturt
+  linkedin: alec-m
 
 - name: Person 3
   role: pwn
