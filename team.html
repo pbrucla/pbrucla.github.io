@@ -10,7 +10,7 @@ description: The team members of Psi Beta Rho!
 <div class="team-flex-container">
     {% for member in site.data.members %}
         <div class="member-flex-item">
-            <img src="assets/images/members/{% if member.photo %}{{ member.photo }}{% else %}{{ 'placeholder.png' }}{% endif %}" class="profile-image"/>
+            <img src="assets/images/members/{% if member.photo %}{{ member.photo }}{% else %}{{ 'logo-placeholder.png' }}{% endif %}" class="profile-image"/>
 
             <p class="member-name"><strong>{{ member.name }}</strong></p>
             <p class="member-role"><i>{{ member.role }}</i></p>

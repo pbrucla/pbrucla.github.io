@@ -10,17 +10,12 @@
   github: burturt
   linkedin: alec-m
 
-- name: Person 3
-  role: pwn
-  linkedin: test1
+- name: Joshua Zhu
+  role: crypto
+  github: joshuazhu17
+  linkedin: joshuazhu17
 
-- name: Person 4
-  role: web
-  github: uclaacm
-  linkedin: test2
-
-- name: Person 5
-  role: pwn
-  github: uclaacm
-  linkedin: test1
-
+- name: Andrew Kuai
+  role: team captain, web, blockchain, misc
+  github: Arc-blroth
+  linkedin: arcblroth

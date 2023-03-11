@@ -1,0 +1,44 @@
+// Team Page
+
+.team-flex-container {
+    display: flex;
+    margin: 0 3%;
+    flex-wrap: wrap;
+
+    .member-flex-item {
+        margin: 1.5% 6%;
+        max-width: 25%;
+        text-align: center;
+
+        p {
+            margin: 0.5rem 0;
+            padding: 0;
+        }
+
+        .member-name {
+            font-size: 200%;
+        }
+
+        .member-role {
+            font-size: 100%;
+        }
+
+
+    }
+    
+    .logo {
+        max-width: 20%;
+        // counteracts the global image styling
+        margin-left: none;
+        margin-right: none;
+        display: inline-block;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .profile-image {
+        border-radius: 50%;
+    }
+}
