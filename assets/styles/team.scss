@@ -4,11 +4,13 @@
     display: flex;
     margin: 0 3%;
     flex-wrap: wrap;
+    justify-content: center;
 
     .member-flex-item {
-        margin: 1.5% 6%;
+        margin: 1.5% 4%;
         max-width: 25%;
         text-align: center;
+        min-width: 150px;
 
         p {
             margin: 0.5rem 0;
@@ -40,5 +42,6 @@
 
     .profile-image {
         border-radius: 50%;
+        aspect-ratio: 1;
     }
 }
