@@ -11,7 +11,8 @@ body {
   color: #ffffff;
   font-family: "IBM Plex Mono", "Consolas", "Lucida Console", monospace;
 
-  --nav-width: calc(10% + 2rem);
+  --min-nav-inner-width: 80px;
+  --nav-width: calc(max(var(--min-nav-inner-width), 10%) + 2rem);
 }
 
 a {
