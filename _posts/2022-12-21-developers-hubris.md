@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SquareCTF 2022"
+title: Developer's Hubris | SquareCTF 2022
 author: Andrew Kuai
 tags: web
 summary: "Developer's Hubris" # 200 char max
