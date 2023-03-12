@@ -4,7 +4,7 @@ nav {
     --y-spacing: calc(var(--font-size) * 1.18);
 
     position: fixed;
-    overflow-y: hidden;
+    overflow: clip clip;
     top: 0;
     left: 0;
     bottom: 0;
