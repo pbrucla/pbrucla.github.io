@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "XMASCTF 2022"
+title: The Triple Blockchain Writeup | X-MASCTF 2022
 author: Andrew Kuai
 tags: web
 summary: "Blockchain Challenges" # 200 char max

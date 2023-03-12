@@ -4,15 +4,27 @@ title: CTFs
 description: Some CTFs our team has played in the past!
 ---
 
-<h1>CTFs</h1>
-<p>Some CTFs our team has played in the past. We are in the progress of updating this page! Feel free to check out our <a href="https://ctftime.org/team/186494">CTFTime</a> in the meanwhile.</p>
+<h1>Past CTFs</h1>
 
-<!-- <ul>
-    {% for ctf in site.data.ctfs %}
-        <li>
-            <a href="https://ctftime.org/event/{{ ctf.id }}">
-                {{ ctf.name }}
-            </a>, {{ ctf.place }}
-        </li>
-    {% endfor %}
-</ul> -->
+{% for year in site.data.ctfs.ctfs %}
+    <h2 class="ctf-year">{{ year.year }}</h2>    
+    <ul class="ctf-cards">
+        {% for ctf in year.ctfs %}
+            <li>
+                <div class="ctf-details">
+                    {% if ctf.place == "organizers" %}
+                    <div class="ctf-organizers">ORGANIZERS</div>
+                    {% else %}
+                    <div class="ctf-place">#{{ ctf.place }}</div>
+                    {% endif %}
+                    <div class="ctf-time-link">
+                        <a href="https://ctftime.org/event/{{ ctf.id }}">CTF Time</a> →
+                    </div>
+                </div>
+                <div class="ctf-name">
+                    {{ ctf.name }}
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+{% endfor %}
