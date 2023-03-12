@@ -1,11 +1,14 @@
 nav {
-    background-color: #6B6B6B;
+    --font-size: 2.1vw;
+    --x-spacing: calc(var(--font-size) * 0.585);
+    --y-spacing: calc(var(--font-size) * 1.18);
+
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
-    font-size: 2vw;
-    width: 10rem;
+    padding: 1rem 0rem 0rem 1rem;
+    width: 10%;
 
     ul {
         display: flex;
@@ -29,4 +32,12 @@ nav {
             }
         }
     }
+}
+
+/** styling inline svgs only seems to work with top-level classes */
+.nav-num {
+    fill: #6B6B6B;
+    font-size: 2.1vw;
+    user-select: none;
+    pointer-events: none;
 }
