@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Sample Article 2"
-author: Cyber McCybean
+author: Andrew Kuai
 tags: web
 summary: "This is a summary of sample article 2." # 200 char max
 ---
