@@ -4,4 +4,13 @@
     <link rel="shortcut icon" href="{{ "assets/favicon.ico" | relative_url }}"">
     <link rel="stylesheet" href="{{ "assets/styles/global.css" | relative_url }}">
     <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+    <!-- SEO Metadata -->
+    <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta property="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:image" content="{{ "assets/images/pbr-team-photo.png" | relative_url }}">
+    <meta name="theme-color" content="#FFBD3F">
 </head>
