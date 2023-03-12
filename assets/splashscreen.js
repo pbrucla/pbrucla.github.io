@@ -46,7 +46,6 @@ function feedbacker(i) {
         () => {
             let textHeight = getTextHeight("0", "normal 2.1vw IBM Plex Mono");
             let paddingHeight = parseFloat(getComputedStyle(load)["padding"]) * 2;
-            console.log((window.innerHeight - paddingHeight) / textHeight);
             if (i < 71 && i < (window.innerHeight - paddingHeight) / textHeight - 3) {
                 // stop once screen is filled
                 feedbacker(i);
