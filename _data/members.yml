@@ -1,7 +1,21 @@
-- name: Cyber McCybean
-  github: uclaacm
-  role: pwn
+- name: Benson Liu
+  photo: bliutech.png
+  role: director & web
+  website: https://bliu.tech
+  github: bliutech
+  linkedin: bliutech
 
-- name: Cyber McCybean
-  github: uclaacm
-  role: web
+- name: Andrew Kuai
+  role: team captain, web, blockchain, misc
+  github: Arc-blroth
+  linkedin: arcblroth
+
+- name: Alec Machlis
+  role: team captain
+  github: burturt
+  linkedin: alec-m
+
+- name: Joshua Zhu
+  role: crypto
+  github: joshuazhu17
+  linkedin: joshuazhu17

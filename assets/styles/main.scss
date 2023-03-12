@@ -1,4 +1,17 @@
-main {
-    margin-left: 11%;
-    margin-right: 16%;
+.content {
+    margin-left: 10rem;
+
+    main {
+        padding: 5rem 10%;
+        min-height: 50rem;
+
+        img {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            max-height: 60vh;
+            object-fit: cover;
+        }
+    }
 }
