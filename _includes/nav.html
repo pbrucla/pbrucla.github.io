@@ -1,9 +1,51 @@
 <nav>
+    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            {%- for i in (0..16) -%}
+                <g id="{% if i != 16 %}{{ i }}{% else %}x{% endif %}">
+                {%- for j in (0..15) -%}
+                    <text x="0" y="0" class="nav-num" style="transform: translateY(calc({{ j }} * var(--y-spacing)))">
+                        {%- if i != 16 -%}
+                            {{- i -}}
+                        {%- else -%}
+                            {%- if j < 10 -%}
+                                {{- j -}}
+                            {%- else -%}
+                                {%- capture to_hex -%}%4{{- j | minus: 9 -}}{%- endcapture -%}
+                                {{- to_hex | url_decode -}}
+                            {%- endif -%}
+                        {%- endif -%}
+                    </text>
+                {%- endfor -%}
+                </g>
+            {%- endfor -%}
+            <g id="0s">
+                <use xlink:href="#0" style="transform: translateX(calc(7 * var(--x-spacing)))" />
+                {%- for j in (0..4) -%}
+                    <use xlink:href="#0" style="transform: translateX(calc({{ j }} * var(--x-spacing)))" />
+                {%- endfor -%}
+            </g>
+        </defs>
+        <g style="transform: translateY(var(--font-size))">
+            {%- for i in (0..4) -%}
+                {%- capture y-offset -%}calc({{ i }} * var(--y-spacing) * 16{%- endcapture -%}
+                <use xlink:href="#0s" style="transform: translateY({{ y-offset }})" />
+                <use xlink:href="#x" style="transform: translate(calc(6 * var(--x-spacing)), {{ y-offset }})" />
+                <use xlink:href="#{{ i }}" style="transform: translate(calc(5 * var(--x-spacing)), {{ y-offset }})" />
+            {%- endfor -%}
+        </g>
+    </svg>
     <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/team">Team</a></li>
-        <li><a href="/ctfs">CTFs</a></li>
-        <li><a href="/archive">Archive</a></li>
+        {%- assign stripped-page-url = page.url | remove: ".html" -%}
+        {%- for entry in site.data.navbar -%}
+            <li {% if entry.z-index != nil -%}style="z-index: {{ entry.z-index }};"{%- endif -%}>
+                <a href="{{ entry.href }}"
+                   title="{{ entry.name }}"
+                   {%- if stripped-page-url == entry.href -%}highlighted{%- endif -%}
+                >
+                    {{- entry.name | truncate: 4, "" -}}
+                </a>
+            </li>
+        {%- endfor -%}
     </ul>
 </nav>
