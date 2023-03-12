@@ -6,10 +6,6 @@ tags: web
 summary: "Developer's Hubris" # 200 char max
 ---
 
-#### SquareCTF/web/500
-# Developer's Hubris
-by Arc'blroth
-
 All-in-all this has probably been the hardest challenge I've solved to date, and definitely one of the most fun. The feeling of each exploit peeling back another layer of the challenge kept it interesting all the way from reconnaissance to cleanup!
 
 ## The Flavortext

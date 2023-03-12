@@ -2,13 +2,9 @@
 layout: post
 title: The Triple Blockchain Writeup | X-MASCTF 2022
 author: Andrew Kuai
-tags: web
+tags: blockchain misc
 summary: "Blockchain Challenges" # 200 char max
 ---
-
-#### x-mas2022/blockchain/*
-# The Triple Blockchain Writeup
-by Arc'blroth
 
 ![616cdd36c7d84921ac77043bee43110e.png]({{"/assets/posts/xmas-triple-blockchain/616cdd36c7d84921ac77043bee43110e.png" | relative_url}})
 <p align="center">
