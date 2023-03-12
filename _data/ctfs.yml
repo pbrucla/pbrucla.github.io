@@ -1,3 +1,59 @@
-- name: LA CTF 2023
-  id: 1732
-  place: organizers
+ctfs:
+  - year: 2023
+    ctfs:
+      - name: CTF After Dark - Winter 2023
+        id: 1876
+        place: organizers
+      - name: LA CTF 2023
+        id: 1732
+        place: organizers
+      - name: pbctf 2023
+        id: 1763
+        place: 16
+      - name: DiceCTF 2023
+        id: 1838
+        place: 178
+      - name: bi0sCTF 2022
+        id: 1714
+        place: 27
+      - name: IrisCTF 2023
+        id: 1774
+        place: 4  
+  - year: 2022
+    ctfs:
+      - name: CTF After Dark - Fall 2022
+        id: 1780
+        place: organizers
+      - name: ASIS CTF Final 2022
+        id: 1725
+        place: 30
+      - name: NahamCon EU 2022 CTF
+        id: 1843
+        place: 46
+      - name: X-MAS CTF 2022
+        id: 1787
+        place: 2
+      - name: KITCTFCTF 2022
+        id: 1810
+        place: 25
+      - name: GlacierCTF 2022
+        id: 1803
+        place: 84
+      - name: Square CTF 2022
+        id: 1756
+        place: 25
+      - name: SECCON CTF 2022 Quals
+        id: 1764
+        place: 357
+      - name: BuckeyeCTF 2022
+        id: 1740
+        place: 3
+      - name: Hack-A-Sat 3 Qualifiers
+        id: 1562
+        place: 306
+      - name: TJCTF 2022
+        id: 1599
+        place: 199
+      - name: San Diego CTF 2022
+        id: 1495
+        place: 25
