@@ -35,13 +35,16 @@
             {% endfor %}
         </g>
     </svg>
-    <!--
     <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/team">Team</a></li>
-        <li><a href="/ctfs">CTFs</a></li>
-        <li><a href="/archive">Archive</a></li>
+        {% assign stripped-page-url = page.url | remove: ".html" %}
+        {% for entry in site.data.navbar %}
+            <li {% if entry.z-index != nil %}style="z-index: {{ entry.z-index }};"{% endif %}>
+                <a href="{{ entry.href }}"
+                   title="{{ entry.name }}"
+                   {% if stripped-page-url == entry.href %}highlighted{% endif %}
+                >{{ entry.name | truncate: 4, "" }}</a>
+                {%- comment -%} DO NOT change the spacing of the above line - see https://stackoverflow.com/q/2628050 {%- endcomment -%}
+            </li>
+        {% endfor %}
     </ul>
-    -->
 </nav>

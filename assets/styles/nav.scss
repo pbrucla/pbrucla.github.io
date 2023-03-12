@@ -11,25 +11,46 @@ nav {
     padding: 1rem 0rem 0rem 1rem;
     width: calc(var(--nav-width) - 2rem);
 
+    svg {
+        position: absolute;
+        user-select: none;
+        pointer-events: none;
+    }
+
     ul {
+        position: absolute;
         display: flex;
         flex-direction: column;
         list-style-type: none;
         margin: 0;
-        padding: 1rem;
+        padding: 0;
+        width: calc(var(--x-spacing) * 8);
         align-items: center;
+        font-size: var(--font-size);
 
         li {
-            margin: 0.5em 0;
+            height: 0px;
+            margin: var(--y-spacing) 0 0 0;
 
             a {
+                display: inline-block;
+                width: 100%;
                 color: #FFFFFF;
+                background-color: #2C2C2C;
                 text-decoration: none;
                 text-align: center;
-            }
 
-            a:hover {
-                color: #FFBD3F;
+                &[highlighted], &:hover {
+                    color: #FFBD3F;
+                }
+
+                &[highlighted]::before {
+                    content: ">>";
+                }
+
+                &[highlighted]::after {
+                    content: "<<";
+                }
             }
         }
     }

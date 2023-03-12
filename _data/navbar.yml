@@ -1,0 +1,16 @@
+- name: Home
+  href: /
+
+- name: Blog
+  href: /blog
+  # make sure g isn't cut off
+  z-index: 1
+
+- name: Team
+  href: /team
+
+- name: CTFs
+  href: /ctfs
+
+- name: Archive
+  href: /archive
