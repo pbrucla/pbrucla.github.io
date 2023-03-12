@@ -8,8 +8,7 @@ ul.ctf-cards {
 ul.ctf-cards>li {
     width: 40%;
     padding: 1.5rem;
-    margin-right: 3rem;
-    margin-bottom: 2rem;
+    margin: 1rem;
     border-radius: 0.5rem;
     background-color: #565656;
     transition: box-shadow .2s;
@@ -26,7 +25,7 @@ ul.ctf-cards>li:hover {
     padding: 5px;
     text-align: center;
     color: white;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
 } 
 
@@ -37,7 +36,7 @@ ul.ctf-cards>li:hover {
     padding: 5px;
     text-align: center;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -47,7 +46,7 @@ ul.ctf-cards>li:hover {
 
 .ctf-name {
     color: white;
-    font-size: 2.5rem;
+    font-size: 5vh;
     font-weight: bold;
 }
 
