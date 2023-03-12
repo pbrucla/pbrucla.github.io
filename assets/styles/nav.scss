@@ -8,7 +8,7 @@ nav {
     left: 0;
     bottom: 0;
     padding: 1rem 0rem 0rem 1rem;
-    width: 10%;
+    width: calc(var(--nav-width) - 2rem);
 
     ul {
         display: flex;

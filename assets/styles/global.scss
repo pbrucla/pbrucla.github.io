@@ -10,6 +10,8 @@ body {
   background-color: #2c2c2c;
   color: #ffffff;
   font-family: "IBM Plex Mono", "Consolas", "Lucida Console", monospace;
+
+  --nav-width: calc(10% + 2rem);
 }
 
 a {
