@@ -1,50 +1,51 @@
 <nav>
     <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
         <defs>
-            {% for i in (0..16) %}
+            {%- for i in (0..16) -%}
                 <g id="{% if i != 16 %}{{ i }}{% else %}x{% endif %}">
-                {% for j in (0..15) %}
+                {%- for j in (0..15) -%}
                     <text x="0" y="0" class="nav-num" style="transform: translateY(calc({{ j }} * var(--y-spacing)))">
-                        {% if i != 16 %}
-                            {{ i }}
-                        {% else %}
-                            {% if j < 10 %}
-                                {{ j }}
-                            {% else %}
-                                {% capture to_hex %}%4{{ j | minus: 9 }}{% endcapture %}
-                                {{ to_hex | url_decode }}
-                            {% endif %}
-                        {% endif %}
+                        {%- if i != 16 -%}
+                            {{- i -}}
+                        {%- else -%}
+                            {%- if j < 10 -%}
+                                {{- j -}}
+                            {%- else -%}
+                                {%- capture to_hex -%}%4{{- j | minus: 9 -}}{%- endcapture -%}
+                                {{- to_hex | url_decode -}}
+                            {%- endif -%}
+                        {%- endif -%}
                     </text>
-                {% endfor %}
+                {%- endfor -%}
                 </g>
-            {% endfor %}
+            {%- endfor -%}
             <g id="0s">
                 <use xlink:href="#0" style="transform: translateX(calc(7 * var(--x-spacing)))" />
-                {% for j in (0..4) %}
+                {%- for j in (0..4) -%}
                     <use xlink:href="#0" style="transform: translateX(calc({{ j }} * var(--x-spacing)))" />
-                {% endfor %}
+                {%- endfor -%}
             </g>
         </defs>
         <g style="transform: translateY(var(--font-size))">
-            {% for i in (0..4) %}
-                {% capture y-offset %}calc({{ i }} * var(--y-spacing) * 16{% endcapture %}
+            {%- for i in (0..4) -%}
+                {%- capture y-offset -%}calc({{ i }} * var(--y-spacing) * 16{%- endcapture -%}
                 <use xlink:href="#0s" style="transform: translateY({{ y-offset }})" />
                 <use xlink:href="#x" style="transform: translate(calc(6 * var(--x-spacing)), {{ y-offset }})" />
                 <use xlink:href="#{{ i }}" style="transform: translate(calc(5 * var(--x-spacing)), {{ y-offset }})" />
-            {% endfor %}
+            {%- endfor -%}
         </g>
     </svg>
     <ul>
-        {% assign stripped-page-url = page.url | remove: ".html" %}
-        {% for entry in site.data.navbar %}
-            <li {% if entry.z-index != nil %}style="z-index: {{ entry.z-index }};"{% endif %}>
+        {%- assign stripped-page-url = page.url | remove: ".html" -%}
+        {%- for entry in site.data.navbar -%}
+            <li {% if entry.z-index != nil -%}style="z-index: {{ entry.z-index }};"{%- endif -%}>
                 <a href="{{ entry.href }}"
                    title="{{ entry.name }}"
-                   {% if stripped-page-url == entry.href %}highlighted{% endif %}
-                >{{ entry.name | truncate: 4, "" }}</a>
-                {%- comment -%} DO NOT change the spacing of the above line - see https://stackoverflow.com/q/2628050 {%- endcomment -%}
+                   {%- if stripped-page-url == entry.href -%}highlighted{%- endif -%}
+                >
+                    {{- entry.name | truncate: 4, "" -}}
+                </a>
             </li>
-        {% endfor %}
+        {%- endfor -%}
     </ul>
 </nav>
