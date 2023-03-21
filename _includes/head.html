@@ -5,6 +5,11 @@
     <link rel="stylesheet" href="{{ "assets/styles/global.css" | relative_url }}">
     <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
+    <!-- Code Blocks Support -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/default.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    
     <!-- SEO Metadata -->
     <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta property="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">

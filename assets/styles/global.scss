@@ -41,4 +41,8 @@ img {
     object-fit: cover;
 }
 
+pre > code {
+  border-radius: 10px;
+}
+
 @import 'footer', 'nav', 'post', 'main', 'ctfs', 'team';
