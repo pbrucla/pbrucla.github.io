@@ -19,3 +19,8 @@
   role: crypto
   github: joshuazhu17
   linkedin: joshuazhu17
+
+- name: Alexander Zhang
+  role: pwn
+  github: bkrl
+  website: https://ctf.alexyzhang.dev
