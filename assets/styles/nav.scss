@@ -1,10 +1,10 @@
 nav {
     --font-size: max(2.1vw, calc(0.21 * var(--min-nav-inner-width)));
-    --x-spacing: calc(var(--font-size) * 0.585);
-    --y-spacing: calc(var(--font-size) * 1.18);
+    --x-spacing: calc(var(--font-size) * 0.6);
+    --y-spacing: calc(var(--font-size) * 1.32);
 
     position: fixed;
-    overflow-y: hidden;
+    overflow: clip clip;
     top: 0;
     left: 0;
     bottom: 0;

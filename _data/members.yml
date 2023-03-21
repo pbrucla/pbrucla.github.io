@@ -19,3 +19,14 @@
   role: crypto
   github: joshuazhu17
   linkedin: joshuazhu17
+
+- name: Jason An
+  photo: aplet123.png
+  role: moral support
+  website: https://aplet.me
+  github: Aplet123
+
+- name: Alexander Zhang
+  role: pwn
+  github: bkrl
+  website: https://ctf.alexyzhang.dev
