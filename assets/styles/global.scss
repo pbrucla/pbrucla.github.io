@@ -9,10 +9,13 @@ body {
   padding: 0;
   background-color: #2c2c2c;
   color: #ffffff;
-  font-family: "IBM Plex Mono", "Consolas", "Lucida Console", monospace;
-
+  
   --min-nav-inner-width: 80px;
   --nav-width: calc(max(var(--min-nav-inner-width), 10%) + 2rem);
+}
+
+body, p, code {
+  font-family: "IBM Plex Mono", "Consolas", "Lucida Console", monospace;
 }
 
 a {
@@ -41,8 +44,4 @@ img {
     object-fit: cover;
 }
 
-pre > code {
-  border-radius: 10px;
-}
-
-@import 'footer', 'nav', 'post', 'main', 'ctfs', 'team', 'splash';
+@import 'footer', 'nav', 'post', 'main', 'ctfs', 'team', 'splash', 'code';
