@@ -7,7 +7,7 @@
         </ol>
     </div>
     <ul>
-        <li aria-hidden="true">0</li>
+        <li id="splash-hack-zero-for-reference" aria-hidden="true">0</li>
         {%- assign stripped-page-url = page.url | remove: ".html" -%}
         {%- for entry in site.data.navbar -%}
             <li {% if entry.z-index != nil -%}style="z-index: {{ entry.z-index }};"{%- endif -%}>
