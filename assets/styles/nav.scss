@@ -1,20 +1,56 @@
 nav {
     --font-size: max(2.1vw, calc(0.21 * var(--min-nav-inner-width)));
-    --x-spacing: calc(var(--font-size) * 0.6);
-    --y-spacing: calc(var(--font-size) * 1.32);
+    --nav-inner-width: 5em;
 
     position: fixed;
-    overflow: clip clip;
+    overflow: visible;
     top: 0;
     left: 0;
     bottom: 0;
-    padding: 1rem 0rem 0rem 1rem;
+    padding: 1rem 0rem 0rem 0.7rem;
+    -webkit-padding-start: 0.4rem;
     width: calc(var(--nav-width) - 2rem);
 
-    svg {
+    div.hex {
         position: absolute;
+        width: var(--nav-inner-width);
+        padding-right: 1rem;
         user-select: none;
         pointer-events: none;
+
+        font-size: var(--font-size);
+        color: #6B6B6B;
+
+        ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            counter-reset: hex -16;
+            isolation: isolate;
+
+            li {
+                position: relative;
+                display: flow-root;
+                counter-increment: hex 16;
+
+                &::before {
+                    content: "00000000";
+                    position: absolute;
+                    display: block;
+                    text-align: right;
+                    width: 100%;
+                }
+                
+                &::after {
+                    content: counter(hex, upper-hexadecimal);
+                    z-index: 1;
+                    position: relative;
+                    display: block;
+                    float: right;
+                    background-color: #2C2C2C;
+                }
+            }
+        }
     }
 
     ul {
@@ -24,21 +60,38 @@ nav {
         list-style-type: none;
         margin: 0;
         padding: 0;
-        width: calc(var(--x-spacing) * 8);
-        align-items: center;
+        width: var(--nav-inner-width);
         font-size: var(--font-size);
 
         li {
-            height: 0px;
-            margin: var(--y-spacing) 0 0 0;
+            &:first-child {
+                opacity: 0%;
+                user-select: none;
+                pointer-events: none;
+            }
 
             a {
-                display: inline-block;
-                width: 100%;
+                display: block;
+                float: right;
+                isolation: isolate;
                 color: #FFFFFF;
-                background-color: #2C2C2C;
                 text-decoration: none;
                 text-align: center;
+
+                &:not([highlighted])::before {
+                    content: "\00a0\00a0\00a0\00a0";
+                    position: absolute;
+                    background-color: #2C2C2C;
+                    z-index: -1;
+                }
+
+                &:not([highlighted])::after {
+                    content: "\00a0\00a0";
+                }
+
+                &[highlighted] {
+                    background-color: #2C2C2C;
+                }
 
                 &[highlighted], &:hover {
                     color: #FFBD3F;
@@ -56,10 +109,12 @@ nav {
     }
 }
 
-/** styling inline svgs only seems to work with top-level classes */
-.nav-num {
-    fill: #6B6B6B;
-    font-size: var(--font-size);
-    user-select: none;
-    pointer-events: none;
+/*
+ * Safari doesn't support @counter-style but has
+ * upper-hexadecimal built-in, so using this name
+ * works for all browsers!
+ */
+@counter-style upper-hexadecimal {
+    system: numeric;
+    symbols: "0" "1" "2" "3" "4" "5" "6" "7" "8" "9" "A" "B" "C" "D" "E" "F";
 }
