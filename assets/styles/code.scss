@@ -1,9 +1,18 @@
 /* Based on https://github.com/richleland/pygments-css/blob/master/monokai.css */
 
 div.highlight {
-    border-radius: 10px;
-    padding: 1px 20px;
+    padding: 1px 15px;
     margin: 5px 0;
+}
+
+.content article pre:not(.highlight) {
+    padding: 10px 15px;
+}
+
+div.highlight, .content article pre:not(.highlight) {
+    background: #222;
+    color: #f7f1ff;
+    border-radius: 10px;
     overflow-x: auto;
 }
 
