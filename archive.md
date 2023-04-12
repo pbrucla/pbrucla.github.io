@@ -6,6 +6,9 @@ layout: default
 
 Here are some practices we have run in the past!
 
+## Spring 2023
+**Week 2:** *Python Pickles*. Presented by Ronak. [Slides](https://docs.google.com/presentation/d/1IceWSC0CNsSMWmXYOWx7bg5YOlSekzMeDLJlfVOSrmQ/edit?usp=sharing)
+
 ## Winter 2023
 - **Week 2:** *Pyjails*. Presented by Jason. [Slides](https://docs.google.com/presentation/d/1_pzqSHCS0RkZTImWB3a4841EnxQ7PO0ThrHgRNfuZwc/edit?usp=sharing)
 - **Week 3:** *Network Traffic Analysis*. Presented by Alec. [Slides](https://docs.google.com/presentation/d/1691cXGc7EjPu_9QRvOOv-lIOy2Zl72J7nlD_Jsn2YKE/edit?usp=sharing)
