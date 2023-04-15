@@ -6,6 +6,7 @@ baseurl: "/"
 url: "https://pbr.uclaacm.com"
 github: pbrucla
 twitter: pbrucla
+image: "assets/images/pbr-team-photo.jpeg"
 
 sass:
   sass_dir: assets/styles
