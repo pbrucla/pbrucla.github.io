@@ -12,6 +12,9 @@ twitter: pbrucla
 sass:
   sass_dir: assets/styles
 
+kramdown:
+  math_engine: katex
+
 exclude:
 - README.md
 - .github/
