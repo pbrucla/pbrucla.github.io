@@ -1,7 +1,15 @@
 footer {
-    background-color: #6B6B6B;
+    color: #6B6B6B;
     font-size: 1.5vw;
     width: 100%;
     text-align: center;
-    padding: 5rem 0;
+    padding: 2rem 0;
+
+    a {
+        text-decoration: none;
+    }
+    
+    p {
+        margin: 0;
+    }
 }
