@@ -11,6 +11,9 @@ image: "assets/images/pbr-team-photo.jpeg"
 sass:
   sass_dir: assets/styles
 
+kramdown:
+  math_engine: katex
+
 exclude:
 - README.md
 - .github/
