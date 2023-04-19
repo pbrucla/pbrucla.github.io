@@ -8,6 +8,7 @@ Here are some practices we have run in the past!
 
 ## Spring 2023
 - **Week 2:** *Python Pickles*. Presented by Ronak. [Slides](https://docs.google.com/presentation/d/1IceWSC0CNsSMWmXYOWx7bg5YOlSekzMeDLJlfVOSrmQ/edit?usp=sharing)
+- **Week 3:** *Number Theory*. Presented by Vivek [Slides](https://docs.google.com/presentation/d/1Egh12MdiS46oGohLJrHcXT4gIsFRs-HL45mxWoFUsEQ/edit?usp=sharing)
 
 ## Winter 2023
 - **Week 2:** *Pyjails*. Presented by Jason. [Slides](https://docs.google.com/presentation/d/1_pzqSHCS0RkZTImWB3a4841EnxQ7PO0ThrHgRNfuZwc/edit?usp=sharing)
