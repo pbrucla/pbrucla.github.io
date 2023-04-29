@@ -4,7 +4,48 @@ layout: default
 
 # Welcome to PBR!
 
-![Our team at a Boba Social Night!](assets/images/pbr-boba-social.jpg "Our team at a Boba Social Night!")
+<!-- https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+<div class="w3-content w3-display-container" style="max-width:1000px">
+    <img class="mySlides" src="assets/images/pbr-boba-social.jpg" style="width:100%">
+    <img class="mySlides" src="/assets/images/pbr-team-photo.jpeg" style="width:100%">
+    <img class="mySlides" src="/assets/images/buckeye-ctf.jpeg" style="width:100%">
+    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle clicks" style="width:100%">
+        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+        <span class="w3-badge demo w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-badge demo w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-badge demo w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    </div>
+</div>
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+        showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-white", "");
+    }
+    x[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " w3-white";
+    }
+</script>
 
 Psi Beta Rho (a.k.a. PBR or ψβρ) is UCLA's competetive cybersecurity team! We compete in CTFs or Capture the Flag events, where we solve cybersecurity challenges to earn points! We are a group of hackers, programmers, and security enthusiasts who love to learn and compete. We are a part of [ACM Cyber at UCLA](https://acmcyber.com/). Whether we are pwning a binary or attacking a site using cross-site scripting, we like to have fun! If you are a UCLA student, feel free to join us! No experience necessary! If you just want to check us out, our practice are always open to the public so be sure to swing by!
 
@@ -12,5 +53,3 @@ If you want to see who is on our team, check out our [team page](/team). To see 
 
 
 To contact us, either email us at [uclacyber@gmail.com](mailto:uclacyber@gmail.com) or join the [ACM Cyber Discord](https://discord.gg/j9dgf2q).
-
-![A team photo for Psi Beta Rho!](/assets/images/pbr-team-photo.jpeg)
