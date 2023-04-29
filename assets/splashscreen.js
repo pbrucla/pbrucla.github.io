@@ -33,7 +33,7 @@ function feedbacker(i) {
     } else if (i == 9) {
         textarea.innerHTML += "00000090  2a 2a 2a 2a 2a 2a 2a <span style='color:#F44D89'>61  74 20 55 43 4C 41</span> 2a 2a  |*******<span style='color:#F44D89'>at UCLA</span>**|<br>";
     } else {
-        textarea.append(leftPad(Number(i).toString(16), 8, '0') + hexdump + "\n");
+        textarea.append(leftPad(Number(i).toString(16).toUpperCase(), 7, '0') + '0' + hexdump + "\n");
     }
     
     // scrolling not necessary
@@ -44,7 +44,7 @@ function feedbacker(i) {
     let time = Math.floor(Math.random() * 4) + 1;
     setTimeout(
         () => {
-            let textHeight = getTextHeight("0", "normal 2.1vw IBM Plex Mono");
+            let textHeight = getTextHeight();
             let paddingHeight = parseFloat(getComputedStyle(load)["padding"]) * 2;
             if (i < 71 && i < (window.innerHeight - paddingHeight) / textHeight - 3) {
                 // stop once screen is filled
@@ -71,10 +71,6 @@ function leftPad(content, len, pad=' ') {
     return pad.repeat(len - content.length) + content;
 }
 
-function getTextHeight(text, font) {
-    const canvas = getTextHeight.canvas || (getTextHeight.canvas = document.createElement("canvas"));
-    const context = canvas.getContext("2d");
-    context.font = font;
-    const metrics = context.measureText(text);
-    return metrics.fontBoundingBoxAscent + metrics.fontBoundingBoxDescent;
-  }
+function getTextHeight() {
+    return document.getElementById("splash-hack-zero-for-reference").clientHeight;
+}
