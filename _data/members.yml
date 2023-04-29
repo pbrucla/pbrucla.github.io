@@ -31,3 +31,9 @@
   role: pwn
   github: bkrl
   website: https://ctf.alexyzhang.dev
+
+- name: Ronak Badhe
+  photo: r2dev2.webp
+  role: web, misc
+  github: r2dev2
+  website: https://r2dev2.github.io
