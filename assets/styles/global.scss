@@ -55,4 +55,10 @@ img {
     object-fit: cover;
 }
 
+blockquote {
+    border-left: 5px solid #FFBD3F;
+    padding-left: 1rem;
+    margin-left: 0;
+}
+
 @import 'footer', 'nav', 'post', 'main', 'ctfs', 'team', 'splash', 'code';
