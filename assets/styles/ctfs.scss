@@ -1,21 +1,23 @@
 ul.ctf-cards {
     list-style: none;
     padding: 0;
+    margin: 0;
     display:flex;
     flex-wrap: wrap;
 }
 
-ul.ctf-cards>li {
-    width: 40%;
+ul.ctf-cards > li {
+    width: 35%;
     padding: 1.5rem;
-    margin: 1rem;
+    margin: 2%;
+    border: 1px solid #FFBD3F;
     border-radius: 0.5rem;
     background-color: #565656;
     transition: box-shadow .2s;
 }
 
-ul.ctf-cards>li:hover {
-    box-shadow: 0 0 6px #FFBD3F;
+ul.ctf-cards > li:hover {
+    box-shadow: 0 0 10px #FFBD3F;
 }
 
 .ctf-place {
@@ -25,7 +27,7 @@ ul.ctf-cards>li:hover {
     padding: 5px;
     text-align: center;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
 } 
 
@@ -36,7 +38,7 @@ ul.ctf-cards>li:hover {
     padding: 5px;
     text-align: center;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -46,26 +48,24 @@ ul.ctf-cards>li:hover {
 
 .ctf-name {
     color: white;
-    font-size: 5vh;
+    font-size: 2rem;
     font-weight: bold;
 }
 
 .ctf-details {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 1rem;
 }
 
 .ctf-time-link {
     padding-left: 0.75rem;
-    padding-top: 0.5rem;
+    padding-top: 0.25rem;    
     display: inline;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color:#FFBD3F;
 
     a {
         color:#FFBD3F;
     }
-}
-.ctf-time-link>a:hover {
-    text-decoration: underline solid 2px #FFBD3F;
 }
