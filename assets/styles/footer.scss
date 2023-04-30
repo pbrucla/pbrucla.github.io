@@ -1,6 +1,6 @@
 footer {
     width: 100%;
-    height: 20vh;
+    height: calc(5 * var(--nav-footer-line-height));
     color: #6B6B6B;
     font-size: var(--nav-footer-font-size);
     line-height: var(--nav-footer-line-height);
@@ -17,7 +17,10 @@ footer {
         .window {
             position: fixed;
             width: calc(100% - var(--nav-width));
-            top: calc(1rem + 12 * var(--nav-footer-line-height));
+            /** I couldn't figure out a way to do this without JS so here's a fallback that looks decently well */
+            /** top: calc(1rem + n * var(--nav-footer-line-height)); */
+            bottom: 1vh;
+            -webkit-bottom: 5.5vh;
         }
     }
 
