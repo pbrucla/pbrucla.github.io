@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Minimal Natural Instruction Structural Transformation | BucketCTF 2023
+title: Minimal Natural Instruction Structural Transformation | Bucket CTF 2023
 author: Ronak Badhe
-tags: misc
-summary: OMG MNIST
+tags: misc ai autoencoder
+summary: Model inversion on an AI autoencoder to get the flag!
 ---
 
 OMG MNIST
 
-<img style="max-height: none" src="/assets/posts/imgur/4bduyJe.png" alt="prompt" />
+<img style="max-height: none; width: 50%;" src="/assets/posts/imgur/4bduyJe.png" alt="prompt" />
 
 Files:
 
@@ -94,7 +94,7 @@ with tf.device('/CPU:0'):
 
 When I ran this script I was shown an image (like the one below) and asked [@burturt](https://github.com/burturt) to record the digit that pops up. I can quickly go through each digit by pressing `alt+f4` which closes the `plt.show()` window and shows me the next digit.
 
-![image of 1](/assets/posts/imgur/hMPrVgV.png)
+<img style="max-height: none; width: 50%;" src="/assets/posts/imgur/hMPrVgV.png" alt="image of 1" />
 
 The digits come out to
 ```
@@ -103,8 +103,8 @@ The digits come out to
 
 We first convert it to hex and then to ascii
 
-![decimal to hex](/assets/posts/imgur/6J1LbSa.png)
+<img style="max-height: none; width: 50%;" src="/assets/posts/imgur/6J1LbSa.png" alt="decimal to hex" />
 
-<img style="max-height: none" src="/assets/posts/imgur/MRUy08W.png" alt="hex to ascii" />
+<img style="max-height: none; width: 50%;" src="/assets/posts/imgur/MRUy08W.png" alt="hex to ascii" />
 
 And we get the flag 🎉

@@ -8,7 +8,7 @@ description: articles, writeups, and other snippets of writing
 <ul class="blog-cards">
     {% for post in site.posts %}
     <li>
-        <a href="{{ post.url }}">
+        <a href="{{ post.url | replace: '.html', '' }}">
             <div class="card-title">{{ post.title }}</div>
             <div class="card-date-author">{{ post.date | date: "%B %-d, %Y" }} - {{ post.author }}</div>
             <div class="tags">
