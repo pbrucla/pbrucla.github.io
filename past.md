@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Archive
+# Past Practices
 
 Here are some practices we have run in the past!
 

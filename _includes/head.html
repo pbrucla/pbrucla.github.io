@@ -1,7 +1,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="{{ "assets/favicon.ico" | relative_url }}""> <link rel="stylesheet" href="{{ "assets/styles/global.css" | relative_url }}">
+    <link rel="shortcut icon" href="{{ "assets/favicon.ico" | relative_url }}" sizes="any">
+    <link rel="icon" href="{{ "assets/favicon.svg" | relative_url }}" type="image/svg+xml">
+    <link rel="stylesheet" href="{{ "assets/styles/global.css" | relative_url }}">
     <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
     <!-- SEO Metadata -->
