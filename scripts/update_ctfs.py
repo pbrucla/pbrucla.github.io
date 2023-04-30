@@ -1,5 +1,10 @@
 """
 Updates the list of ctfs along with our place in them.
+
+Prereqs:
+- requests
+- PyYAML
+- beautifulsoup4
 """
 from pathlib import Path
 
