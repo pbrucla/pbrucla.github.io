@@ -2,7 +2,7 @@
 
 ![PBR website](.github/pbr-website.png)
 
-Welcome to the home for Psi Beta Rho, UCLA's competitive Capture the Flag (CTF) cybersecurity team! We are a group of hackers, programmers, and security enthusiasts who love to learn and compete.Whether we are pwning a binary or attacking a site using cross-site scripting, we like to have fun!
+Welcome to the home for Psi Beta Rho, UCLA's competitive Capture the Flag (CTF) cybersecurity team! We are a group of hackers, programmers, and security enthusiasts who love to learn and compete. Whether we are pwning a binary or attacking a site using cross-site scripting, we like to have fun!
 
 This site is built using [Jekyll](https://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/). For more information on how to run this site locally, check out the [Getting Started](#getting-started) section.
 
