@@ -1,7 +1,6 @@
 ---
 layout: default
-title: Blog
-description: articles, writeups, and other snippets of writing
+description: Articles & writeups from some of the CTFs we have competed at!
 ---
 <h1>Blog</h1>
 
@@ -16,7 +15,7 @@ description: articles, writeups, and other snippets of writing
                 <span>{{tag}}</span>
                 {% endfor %}
             </div>
-            <p class="card-summary">{{ post.summary | strip_html | newline_to_br | strip_newlines | replace: '<br />', '
+            <p class="card-summary">{{ post.description | strip_html | newline_to_br | strip_newlines | replace: '<br />', '
                 ' | strip_html |
                 strip | truncate: 200 }}</p>
         </a>

@@ -3,7 +3,7 @@ layout: post
 title: Developer's Hubris | Square CTF 2022
 author: Andrew Kuai
 tags: web serialization java
-summary: "A Java Spring boot deserialization vulnerability that leads to RCE!"
+description: "A Java Spring boot deserialization vulnerability that leads to RCE!"
 ---
 
 All-in-all this has probably been the hardest challenge I've solved to date, and definitely one of the most fun. The feeling of each exploit peeling back another layer of the challenge kept it interesting all the way from reconnaissance to cleanup!

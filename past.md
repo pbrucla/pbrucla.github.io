@@ -1,5 +1,6 @@
 ---
 layout: default
+description: Some practices we have run in the past!
 ---
 
 # Past Practices
