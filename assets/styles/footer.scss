@@ -1,6 +1,6 @@
 footer {
     width: 100%;
-    height: calc(5 * var(--nav-footer-line-height));
+    height: calc(5.5 * var(--nav-footer-line-height));
     color: #6B6B6B;
     font-size: var(--nav-footer-font-size);
     line-height: var(--nav-footer-line-height);
@@ -10,7 +10,7 @@ footer {
 
     .window-container {
         position: absolute;
-        height: calc(5 * var(--nav-footer-line-height));
+        height: calc(5.5 * var(--nav-footer-line-height));
         width: calc(100% - var(--nav-width));
         clip: rect(0, auto, auto, 0);
 
