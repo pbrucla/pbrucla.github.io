@@ -1,7 +1,34 @@
 footer {
-    background-color: #6B6B6B;
-    font-size: 1.5vw;
     width: 100%;
+    height: calc(5.5 * var(--nav-footer-line-height));
+    color: #6B6B6B;
+    font-size: var(--nav-footer-font-size);
+    line-height: var(--nav-footer-line-height);
     text-align: center;
-    padding: 5rem 0;
+    border-color: #6B6B6B;
+    border-top-style: dashed;
+
+    .window-container {
+        position: absolute;
+        height: calc(5.5 * var(--nav-footer-line-height));
+        width: calc(100% - var(--nav-width));
+        clip: rect(0, auto, auto, 0);
+
+        .window {
+            position: fixed;
+            width: calc(100% - var(--nav-width));
+            /** I couldn't figure out a way to do this without JS so here's a fallback that looks decently well */
+            /** top: calc(1rem + n * var(--nav-footer-line-height)); */
+            bottom: 1vh;
+            -webkit-bottom: 5.5vh;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    p {
+        margin: 0;
+    }
 }

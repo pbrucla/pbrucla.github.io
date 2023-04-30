@@ -1,5 +1,4 @@
 nav {
-    --font-size: max(2.1vw, calc(0.21 * var(--min-nav-inner-width)));
     --nav-inner-width: 5em;
 
     position: fixed;
@@ -18,7 +17,8 @@ nav {
         user-select: none;
         pointer-events: none;
 
-        font-size: var(--font-size);
+        font-size: var(--nav-footer-font-size);
+        line-height: var(--nav-footer-line-height);
         color: #6B6B6B;
 
         ol {
@@ -61,7 +61,8 @@ nav {
         margin: 0;
         padding: 0;
         width: var(--nav-inner-width);
-        font-size: var(--font-size);
+        font-size: var(--nav-footer-font-size);
+        line-height: var(--nav-footer-line-height);
 
         li {
             &:first-child {

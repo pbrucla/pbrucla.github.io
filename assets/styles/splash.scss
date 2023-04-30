@@ -19,6 +19,7 @@
         font-family: "IBM Plex Mono", "Consolas", "Lucida Console", monospace;
         color: rgb(205, 205, 205);
         font-size: 2.1vw;
+        line-height: calc(var(--nav-footer-line-height-multiplier) * 2.1vw);
         opacity: 0.8;
         overflow: hidden hidden;
     }
