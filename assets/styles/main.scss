@@ -1,9 +1,12 @@
 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
     margin-left: var(--nav-width);
 
     main {
         padding: 2rem 5%;
-        min-height: 50rem;
 
         img {
             width: 80%;
