@@ -4,6 +4,7 @@ title: Minimal Natural Instruction Structural Transformation | Bucket CTF 2023
 author: Ronak Badhe
 tags: misc ai autoencoder
 description: Model inversion on an AI autoencoder to get the flag!
+image: /assets/posts/imgur/hMPrVgV.png
 ---
 
 OMG MNIST

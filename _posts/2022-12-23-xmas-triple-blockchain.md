@@ -4,6 +4,7 @@ title: The Triple Blockchain Writeup | X-MAS CTF 2022
 author: Andrew Kuai
 tags: blockchain misc soldity
 description: "A few Solidity smart contract vulnerabilities and information about Ethereum internals leading to a set of flags!"
+image: https://images-ext-1.discordapp.net/external/NMkZOauAd4mHRTFNksGnAG78WwkNPMv0mF-7mU_hSes/https/raw.githubusercontent.com/ethereum/remix-project/master/apps/remix-ide/src/assets/img/sleepingRemiCroped.webp
 ---
 
 ![616cdd36c7d84921ac77043bee43110e.png]({{"/assets/posts/xmas-triple-blockchain/616cdd36c7d84921ac77043bee43110e.png" | relative_url}})
