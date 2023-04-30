@@ -1,13 +1,15 @@
-.mySlides {
-    display:none;
-    height: 500px;
+.carousel-container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1000px;
+    margin-bottom: 550px;
 }
 
-.w3-content{
-    margin-left:auto;
-    margin-right:auto;
-    max-width:980px;
-}
-.w3-display-container{
-    position:relative;
+.mySlides {
+    display: none;
+    margin: 0 10% !important;
+    height: 500px;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
 }
