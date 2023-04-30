@@ -5,7 +5,7 @@ const load = document.getElementById("load");
 const text = "welcome to psi beta rho";
 const hexdump = "  2a 2a 2a 2a 2a 2a 2a 2a  2a 2a 2a 2a 2a 2a 2a 2a  |****************|";
 
-if(window.sessionStorage.getItem("visited") === null) {
+if(window.localStorage.getItem("visited") === null) {
     load.style.display = "initial";
     runner(0);
 }
@@ -59,7 +59,7 @@ function feedbacker(i) {
                     },
                     2000
                 );
-                window.sessionStorage.setItem('visited', true);
+                window.localStorage.setItem('visited', true);
             }
         },
         time
