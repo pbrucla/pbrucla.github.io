@@ -12,6 +12,9 @@ body {
   
   --min-nav-inner-width: 80px;
   --nav-width: calc(max(var(--min-nav-inner-width), 10%) + 2rem);
+  --nav-footer-font-size: max(2.1vw, calc(0.21 * var(--min-nav-inner-width)));
+  --nav-footer-line-height-multiplier: 1.32;
+  --nav-footer-line-height: calc(var(--nav-footer-line-height-multiplier) * var(--nav-footer-font-size));
 }
 
 body, p, code {
