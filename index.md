@@ -6,9 +6,12 @@ layout: default
 
 <!-- https://www.w3schools.com/w3css/w3css_slideshow.asp -->
 <div class="carousel-container">
-    <img class="mySlides" src="assets/images/pbr-boba-social.jpg">
     <img class="mySlides" src="/assets/images/pbr-team-photo.jpeg">
+    <img class="mySlides" src="/assets/images/lactf-johnhammond.jpeg">
+    <img class="mySlides" src="assets/images/pbr-boba-social.jpg">
+    <img class="mySlides" src="/assets/images/lactf-carey.jpeg">
     <img class="mySlides" src="/assets/images/buckeye-ctf.jpeg">
+    <img class="mySlides" src="/assets/images/lactf-nader.jpeg">
 </div>
 
 <script src="/assets/carousel.js"></script>

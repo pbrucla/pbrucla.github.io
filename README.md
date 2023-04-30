@@ -1,17 +1,16 @@
 # [pbrucla.github.io](https://pbr.uclaacm.com/)
-Welcome to the home website for Psi Beta Rho, UCLA's competitive Capture the Flag (CTF) cybersecurity team!
 
-<details>
-  <summary>Table of Contents</summary>
-  <ul>
-    <li><a href="#getting-started">Getting Started</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ul>
-</details>
+![PBR website](.github/pbr-website.png)
 
-<br/>
+Welcome to the home for Psi Beta Rho, UCLA's competitive Capture the Flag (CTF) cybersecurity team! We are a group of hackers, programmers, and security enthusiasts who love to learn and compete.Whether we are pwning a binary or attacking a site using cross-site scripting, we like to have fun!
+
+This site is built using [Jekyll](https://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/). For more information on how to run this site locally, check out the [Getting Started](#getting-started) section.
+
+## Table of Contents
+- [Getting Started](#getting-started)
+- [Contributing](#contributing)
+- [Contact](#contact)
+- [Acknowledgments](#acknowledgments)
 
 ## Getting Started
 1. To get a local copy of this project, first clone the repository and change into the directory:
@@ -39,8 +38,11 @@ git push
 6. If your code passes code review, then we can merge it into `main`. Congratulations! If you'd like, it's now safe to delete your branch.
 
 ## Contact
-Email: uclacyber@gmail.com
+If you see any issues or have any questions, feel free to contact us or open a pull request!
 
-Discord: [https://discord.gg/j9dgf2q](https://discord.gg/j9dgf2q)
+**Email**: uclacyber@gmail.com
+
+**Discord**: [https://discord.gg/j9dgf2q](https://discord.gg/j9dgf2q)
 
 ## Acknowledgments
+This website would not have been possible without the many contributions from our members. Thank you to Benson Liu, Andrew Kuai, Joshua Zhu, Juliet Zhang, Jason An, Ronak Badhe, Konstantin Tzantchev, & Joshua Yin for their contributions to this website! Special thanks to Juliet Zhang for helping to put together the original design! For a full list of contributors, check out the [contributors page](https://github.com/pbrucla/pbrucla.github.io/graphs/contributors).
