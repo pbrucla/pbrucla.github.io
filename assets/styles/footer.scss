@@ -21,6 +21,15 @@ footer {
             /** top: calc(1rem + n * var(--nav-footer-line-height)); */
             bottom: 1vh;
             -webkit-bottom: 5.5vh;
+
+            .contacts { 
+                display: block;
+
+                p {
+                    margin: 0 1rem;
+                    display: inline-block;
+                }
+            }
         }
     }
 
@@ -29,6 +38,6 @@ footer {
     }
 
     p {
-        margin: 0;
+        margin: 0.5rem 0;
     }
 }
