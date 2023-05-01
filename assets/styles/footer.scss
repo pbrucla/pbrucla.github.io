@@ -1,6 +1,6 @@
 footer {
     width: 100%;
-    height: calc(5.5 * var(--nav-footer-line-height));
+    height: calc(5 * var(--nav-footer-line-height));
     color: #6B6B6B;
     font-size: var(--nav-footer-font-size);
     line-height: var(--nav-footer-line-height);
@@ -10,7 +10,7 @@ footer {
 
     .window-container {
         position: absolute;
-        height: calc(5.5 * var(--nav-footer-line-height));
+        height: calc(5 * var(--nav-footer-line-height));
         width: calc(100% - var(--nav-width));
         clip: rect(0, auto, auto, 0);
 
@@ -19,14 +19,13 @@ footer {
             width: calc(100% - var(--nav-width));
             /** I couldn't figure out a way to do this without JS so here's a fallback that looks decently well */
             /** top: calc(1rem + n * var(--nav-footer-line-height)); */
-            bottom: 1vh;
-            -webkit-bottom: 5.5vh;
+            bottom: 4.75vh;
 
             .contacts { 
                 display: block;
 
                 p {
-                    margin: 0 1rem;
+                    margin: 0px;
                     display: inline-block;
                 }
             }
@@ -38,6 +37,6 @@ footer {
     }
 
     p {
-        margin: 0.5rem 0;
+        margin: 0px;
     }
 }
