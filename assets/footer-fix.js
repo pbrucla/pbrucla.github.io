@@ -4,8 +4,8 @@ function adjustFooter() {
     const textHeight = getTextHeight();
     
     const rows = Math.floor((window.innerHeight - rem) / textHeight);
-    footer.style.bottom = "";
-    footer.style.top = `calc(1rem + ${rows - 4} * var(--nav-footer-line-height))`;
+    footer.style.bottom = "unset";
+    footer.style.top = `calc(1rem + ${rows - 3} * var(--nav-footer-line-height))`;
 }
 
 adjustFooter();
