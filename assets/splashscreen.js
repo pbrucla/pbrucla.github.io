@@ -7,6 +7,7 @@ const hexdump = "  2a 2a 2a 2a 2a 2a 2a 2a  2a 2a 2a 2a 2a 2a 2a 2a  |**********
 
 if(!matchMedia("(prefers-reduced-motion)").matches && window.localStorage.getItem("visited") === null) {
     load.style.display = "initial";
+    document.body.classList.add("no-scroll");
     runner(0);
 }
 
@@ -55,6 +56,7 @@ function feedbacker(i) {
                 setTimeout(
                     () => {
                         load.style.animation = "1s linear both fade-out";
+                        document.body.classList.remove("no-scroll");
                         setTimeout(() => load.style.display = "none", 1000);
                     },
                     2000
