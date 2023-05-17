@@ -12,6 +12,7 @@ Here are some practices we have run in the past!
 - **Week 3:** *Number Theory*. Presented by Vivek. [Slides](https://docs.google.com/presentation/d/1Egh12MdiS46oGohLJrHcXT4gIsFRs-HL45mxWoFUsEQ/edit?usp=sharing)
 - **Week 4:** *Cracking PRNGs*. Presented by Arnav. [Slides](https://docs.google.com/presentation/d/1aJ0Q3GyTWYt8MUXkrKeTnbhtNI8XFOuqdwrMX2zAl30/edit?usp=sharing)
 - **Week 6:** *CTF Expert - William Wang, DiceGang.* [Slides](https://docs.google.com/presentation/d/1IovpWT7Mg-18FQ-BLIoTfAx0stcETUfzjlUHBOtHX4A/edit?usp=sharing)
+- **Week 7:** *Joint Practice w. Batman's Kitchen (University of Washington's CTF Team), Pentesting.* Presented by Alec. [Slides](https://docs.google.com/presentation/d/1IMBDPXbVeK1moqU-SEKlMeJvQlhBr_6211l5_zyCLyg/edit?usp=sharing)
 
 ## Winter 2023
 - **Week 2:** *Pyjails*. Presented by Jason. [Slides](https://docs.google.com/presentation/d/1_pzqSHCS0RkZTImWB3a4841EnxQ7PO0ThrHgRNfuZwc/edit?usp=sharing)
