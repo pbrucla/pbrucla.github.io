@@ -33,6 +33,12 @@
   github: r2dev2
   website: https://r2dev2.github.io
 
+- name: Vera Peker
+  photo: vera.jpeg
+  role: osint
+  github: verapeker
+  linkedin: verapeker
+
 - name: Alexander Zhang
   photo: kaiphait.webp
   role: pwn
@@ -43,9 +49,3 @@
   role: crypto
   github: joshuazhu17
   linkedin: joshuazhu17
-
-- name: Vera Peker
-  photo: vera.jpeg
-  role: osint
-  github: verapeker
-  linkedin: verapeker
