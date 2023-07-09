@@ -584,7 +584,7 @@ from Crypto.Util.number import inverse
 from hashlib import sha256
 import os
 import signal
-
+from pwn import *
 
 MODS = [
 942340315817634793955564145941,
@@ -712,89 +712,60 @@ def handler(_signum, _frame):
 
 
 def main():
-    signal.signal(signal.SIGALRM, handler)
-    signal.alarm(300)
+    conn = remote('my-ecc-service.chal.perfect.blue',int(1337))
+    conn.recvuntil(b' ')
 
-    service = MyECCService()
+    conn.send(b"G\n")
+    payloadHex = conn.recvline().decode().strip().split()[1]
+    print(payloadHex)
+    
+    
+    E1 = EllipticCurve(GF(MODS[-4]),[-3,7])
+    E2 = EllipticCurve(GF(MODS[-3]),[-3,7])
+    nums = [payloadHex[i+20:i+20+26] for i in range(0,len(payloadHex[20:]),26)]
+    a1 = nums[-4]
+    a2 = nums[-3]
 
-    for _ in range(100):
-        service.gen()
-
-    while True:
-        inp = input("> ")
-        if inp == "G":
-            payload = service.gen()
-            print(f"Payload: {payload.hex()}")
-            payloadHex = payload.hex()
-            E1 = EllipticCurve(GF(MODS[-4]),[-3,7])
-            E2 = EllipticCurve(GF(MODS[-3]),[-3,7])
-            nums = [payloadHex[i+20:i+20+26] for i in range(0,len(payloadHex[20:]),26)]
-            a1 = nums[-4]
-            a2 = nums[-3]
-
-            print(nums)
+    print(nums)
 
 
-            x1 = int.from_bytes(bytes.fromhex(a1),"big")
-            x2 = int.from_bytes(bytes.fromhex(a2),"big")
-            P1 = E1(2,3)
-            P2 = E2(2,3)
-            y11 = mod(pow(x1,3)-3*x1+7,MODS[-4]).sqrt()
-            y12 = (-1*y11)% MODS[-4]
-            y21 = mod(pow(x2,3)-3*x2+7,MODS[-3]).sqrt()
-            y22 = (-1*y21) % MODS[-3]
-            print(y11)
-            print(y12)
-            print(y21)
-            print(y22)
-            print(x1)
-            print(x2)
-            Q11 = E1(x1,y11)
-            Q12 = E1(x1,y12)
-            Q21 = E2(x2,y21)
-            Q22 = E2(x2,y22)
+    x1 = int.from_bytes(bytes.fromhex(a1),"big")
+    x2 = int.from_bytes(bytes.fromhex(a2),"big")
+    P1 = E1(2,3)
+    P2 = E2(2,3)
+    y11 = mod(pow(x1,3)-3*x1+7,MODS[-4]).sqrt()
+    y12 = (-1*y11)% MODS[-4]
+    y21 = mod(pow(x2,3)-3*x2+7,MODS[-3]).sqrt()
+    y22 = (-1*y21) % MODS[-3]
+    Q11 = E1(x1,y11)
+    Q12 = E1(x1,y12)
+    Q21 = E2(x2,y21)
+    Q22 = E2(x2,y22)
             
 
-            nonce1 = P1.discrete_log(Q11)
-            nonce2 = P1.discrete_log(Q12)
-
+    nonce1 = P1.discrete_log(Q11)
+    nonce2 = P1.discrete_log(Q12)
+ 
+    nonce3 = P2.discrete_log(Q21)
+    nonce4 = P2.discrete_log(Q22)
             
-            nonce3 = P2.discrete_log(Q21)
-            nonce4 = P2.discrete_log(Q22)
+    nonce = 0
+
+    if (nonce1 == nonce3 or nonce1 == nonce4):
+        nonce = nonce1
+    else:
+        nonce = nonce2
             
-            nonce = 0
+    print(nonce)
+    print(int(nonce).to_bytes(10,"big"))
 
-            if (nonce1 == nonce3 or nonce1 == nonce4):
-                nonce = nonce1
-            else:
-                nonce = nonce2
-            
-            print(nonce)
-            print(int(nonce).to_bytes(10,"big"))
-
-            testService = MyECCService()
-            testService.setState(int(nonce).to_bytes(10,"big"))
-            newPayload = testService.gen()
-            print(f"Result: {newPayload.hex()}")
-
-
-
-        elif inp == "V":
-            payload = bytes.fromhex(input("Payload: "))
-            result = service.verify(payload)
-            print(f"Result: {result}")
-        elif inp == "P":
-            payload = bytes.fromhex(input("Payload: "))
-            answer = service.gen()
-
-            if payload == answer:
-                with open("flag.txt", "r") as f:
-                    print(f.read())
-            else:
-                print("Wrong :(")
-                print(f"Payload: {answer.hex()}")
-            exit(0)
-
+    testService = MyECCService()
+    testService.setState(int(nonce).to_bytes(10,"big"))
+    newPayload = testService.gen()
+    print(f"Result: {newPayload.hex()}")
+    conn.send(b"P\r\n")
+    conn.interactive()
+    
 
 if __name__ == "__main__":
     main()
