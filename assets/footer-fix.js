@@ -5,7 +5,7 @@ function adjustFooter() {
     
     const rows = Math.floor((window.innerHeight - rem) / textHeight);
     footer.style.bottom = "unset";
-    footer.style.top = `calc(1rem + ${rows - 3} * var(--nav-footer-line-height))`;
+    footer.style.top = `calc(1rem + ${rows - 4} * var(--nav-footer-line-height))`;
 }
 
 adjustFooter();
