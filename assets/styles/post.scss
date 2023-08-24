@@ -40,7 +40,7 @@ ul.blog-cards {
 }
 
 .tags {
-    margin: 1rem 0;
+    margin-top: 0.5rem;
 
     span {
         padding: 0.3rem;
@@ -48,11 +48,12 @@ ul.blog-cards {
         background-color: #F44D89;
         border-radius: 0.3rem;
         font-size: 0.8rem;
+        line-height: 2.2rem;
     }
 }
 
 .card-summary {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
 }
 
 .post-title {
