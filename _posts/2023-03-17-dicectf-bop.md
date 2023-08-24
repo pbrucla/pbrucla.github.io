@@ -6,7 +6,7 @@ author: Alexander Zhang
 tags: pwn rop seccomp
 ---
 
-This write-up is also available on my website at <https://ctf.alexyzhang.dev/write-ups/dicectf-2023/bop/>.
+This write-up is also posted on my website at <https://www.alexyzhang.dev/write-ups/dicectf-2023/bop/>.
 
 ## The Challenge
 
