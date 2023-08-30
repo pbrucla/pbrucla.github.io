@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Quadprime RSA | X-MAS CTF 2022
+title: Quadprime RSA | BuckeyeCTF 2022
 author: Gary Song
-tags: Crypto
+tags: crypto rsa
 description: "Just use random primes"
 ---
 
