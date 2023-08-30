@@ -1,13 +1,13 @@
 - name: Benson Liu
   photo: bliutech.png
-  role: director, web
+  role: director, web, misc
   website: https://bliu.tech
   github: bliutech
   linkedin: bliutech
 
 - name: Jason An
   photo: aplet123.png
-  role: captain, moral support
+  role: captain, rev
   website: https://aplet.me
   github: Aplet123
 
@@ -18,7 +18,7 @@
   linkedin: arcblroth
 
 - name: Alec Machlis
-  role: captain
+  role: captain, misc
   github: burturt
   linkedin: alec-m
 
@@ -39,6 +39,12 @@
   github: verapeker
   linkedin: verapeker
 
+- name: Gary Song
+  photo: gary.png
+  role: crypto
+  github: freed2003
+  linkedin: g-song
+
 - name: Alexander Zhang
   photo: kaiphait.webp
   role: pwn
@@ -49,9 +55,3 @@
   role: crypto
   github: joshuazhu17
   linkedin: joshuazhu17
-
-- name: Gary Song
-  photo: gary.png
-  role: crypto
-  github: freed2003
-  linkedin: g-song
