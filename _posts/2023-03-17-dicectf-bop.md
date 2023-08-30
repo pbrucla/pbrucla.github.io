@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DiceCTF 2023 – pwn/bop
+title: pwn/bop | DiceCTF 2023
 description: Reading and printing the flag with a ROP chain
 author: Alexander Zhang
 tags: pwn rop seccomp

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Quadprime RSA| X-MAS CTF 2022
+title: Quadprime RSA | X-MAS CTF 2022
 author: Gary Song
 tags: Crypto
 description: "Just use random primes"
