@@ -1,12 +1,12 @@
 nav {
-    --nav-inner-width: 5em;
+    --nav-inner-width: 8ch;
 
     position: fixed;
     overflow: visible;
     top: 0;
     left: 0;
     bottom: 0;
-    padding: 1rem 0rem 0rem 0.7rem;
+    padding: 1rem 0rem 0rem 1.75ch;
     -webkit-padding-start: 0.4rem;
     width: calc(var(--nav-width) - 2rem);
 
@@ -76,22 +76,12 @@ nav {
                 float: right;
                 isolation: isolate;
                 color: #FFFFFF;
+                background-color: #2C2C2C;
                 text-decoration: none;
                 text-align: center;
 
-                &:not([highlighted])::before {
-                    content: "\00a0\00a0\00a0\00a0";
-                    position: absolute;
-                    background-color: #2C2C2C;
-                    z-index: -1;
-                }
-
-                &:not([highlighted])::after {
-                    content: "\00a0\00a0";
-                }
-
-                &[highlighted] {
-                    background-color: #2C2C2C;
+                &:not([highlighted]) {
+                    margin: 0 2ch;
                 }
 
                 &[highlighted], &:hover {
