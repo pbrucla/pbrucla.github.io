@@ -13,7 +13,7 @@
             <li {% if entry.z-index != nil -%}style="z-index: {{ entry.z-index }};"{%- endif -%}>
                 <a href="{{ entry.href }}"
                    title="{{ entry.name }}"
-                   {%- if stripped-page-url == entry.href -%}highlighted{%- endif -%}
+                   {%- if stripped-page-url == entry.href or (entry.has_posts != nil and layout.layout == "default") -%}highlighted{%- endif -%}
                 >
                     {{- entry.name | truncate: 4, "" -}}
                 </a>
