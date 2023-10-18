@@ -5,6 +5,7 @@
   href: /blog
   # make sure g isn't cut off
   z-index: 1
+  has_posts: true
 
 - name: Team
   href: /team

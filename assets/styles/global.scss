@@ -10,7 +10,7 @@ body {
   background-color: #2c2c2c;
   color: #ffffff;
   
-  --min-nav-inner-width: 80px;
+  --min-nav-inner-width: 8ch;
   --nav-width: calc(max(var(--min-nav-inner-width), 10%) + 2rem);
   --nav-footer-font-size: max(2.1vw, calc(0.21 * var(--min-nav-inner-width)));
   --nav-footer-line-height-multiplier: 1.32;
