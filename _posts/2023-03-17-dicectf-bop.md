@@ -4,6 +4,7 @@ title: pwn/bop | DiceCTF 2023
 description: Reading and printing the flag with a ROP chain
 author: Alexander Zhang
 tags: pwn rop seccomp
+canonical: https://www.alexyzhang.dev/write-ups/dicectf-2023/bop/
 ---
 
 This write-up is also posted on my website at <https://www.alexyzhang.dev/write-ups/dicectf-2023/bop/>.

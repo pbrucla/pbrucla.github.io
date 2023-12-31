@@ -4,6 +4,7 @@ title: pwn/harem-scarem | corCTF 2023
 description: Sigreturn-oriented programming with a quirky language
 author: Alexander Zhang
 tags: pwn ROP sigreturn
+canonical: https://www.alexyzhang.dev/write-ups/corctf-2023/harem-scarem/
 ---
 
 This write-up is also posted on my website at <https://www.alexyzhang.dev/write-ups/corctf-2023/harem-scarem/>.
