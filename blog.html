@@ -7,7 +7,7 @@ description: Articles & writeups from some of the CTFs we have competed at!
 <ul class="blog-cards">
     {% for post in site.posts %}
     <li>
-        <a href="{{ post.url | replace: '.html', '' }}">
+        <a href="{{ post.url }}">
             <div class="card-title">{{ post.title }}</div>
             <div class="card-date-author">{{ post.date | date: "%B %-d, %Y" }} - {{ post.author }}</div>
             <div class="tags">
