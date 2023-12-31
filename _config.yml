@@ -7,6 +7,7 @@ url: "https://pbr.uclaacm.com"
 github: pbrucla
 twitter: pbrucla
 image: "assets/images/pbr-team-photo.jpeg"
+permalink: /:categories/:year/:month/:day/:title
 
 sass:
   sass_dir: assets/styles
