@@ -4,6 +4,7 @@ title: pwn/stuff | LA CTF 2023
 description: Ropping without useful gadgets
 author: Alexander Zhang
 tags: pwn ROP stack-pivot
+canonical: https://www.alexyzhang.dev/write-ups/lactf-2023/stuff/
 ---
 
 This write-up is also posted on my website at <https://www.alexyzhang.dev/write-ups/lactf-2023/stuff/>.

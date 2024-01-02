@@ -4,6 +4,7 @@ title: noleek | ångstromCTF 2023
 description: Leakless format string exploitation
 author: Alexander Zhang
 tags: pwn format-string
+canonical: https://www.alexyzhang.dev/write-ups/angstromctf-2023/noleek/
 ---
 
 This write-up is also posted on my website at <https://www.alexyzhang.dev/write-ups/angstromctf-2023/noleek/>.

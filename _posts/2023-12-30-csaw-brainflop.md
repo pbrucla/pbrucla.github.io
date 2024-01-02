@@ -4,6 +4,7 @@ title: brainflop | CSAW CTF 2023 Finals
 description: Pwning a Brainf*ck interpreter
 author: Alexander Zhang
 tags: pwn
+canonical: https://www.alexyzhang.dev/write-ups/csaw-finals-2023/brainflop/
 ---
 
 This write-up is also posted on my website at <https://www.alexyzhang.dev/write-ups/csaw-finals-2023/brainflop/>.
