@@ -5,7 +5,14 @@ const load = document.getElementById("load");
 const text = "welcome to psi beta rho";
 const hexdump = "  2a 2a 2a 2a 2a 2a 2a 2a  2a 2a 2a 2a 2a 2a 2a 2a  |****************|";
 
-if(!matchMedia("(prefers-reduced-motion)").matches && window.localStorage.getItem("visited") === null) {
+const disableAnimation = Boolean(
+  matchMedia("(prefers-reduced-motion)").matches || // some people are triggered by excessive motion
+  localStorage.getItem('visited') || // do not show animation to people who have already seen it
+  location.pathname !== '/' || // it be kinda annoying when people look at blog and have to go through animation
+  document.referrer !== '' // if someone clicks on homepage from a blog, would be weird to show an animation
+);
+
+if(!disableAnimation) {
     load.style.display = "initial";
     document.body.classList.add("no-scroll");
     runner(0);
