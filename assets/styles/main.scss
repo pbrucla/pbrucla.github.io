@@ -14,7 +14,18 @@
             margin: 20px auto;
             display: block;
             max-height: 60vh;
+            /**
+             * object-fit: cover should probably not exist but keep it
+             * just to be sure we don't break anything
+             */
             object-fit: cover;
+        }
+
+        /* for ctf writeup, do not hide parts of the image if it is too tall */
+        article {
+            img {
+                object-fit: contain;
+            }
         }
     }
 }
