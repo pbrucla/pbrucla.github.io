@@ -7,6 +7,22 @@ description: Some practices we have run in the past!
 
 Here are some practices we have run in the past!
 
+## Spring 2024
+- **Week 2:** *LCGs and Minecraft Seedfinding*. Presented by Arnav. [Slides](https://docs.google.com/presentation/d/1tGAz_zIpPk4tgZ4InwrgybrHme5BIDwDmLxjhOOrEnA/edit?usp=sharing)
+- **Week 3:** *Zero Knowledge Proofs*. Presented by Joshua. [Slides](https://docs.google.com/presentation/d/1DVXJ7JscBF4JLGIJ0KwV-2KPrIB4d_sB5eaJQRy-9xM/edit?usp=sharing)
+
+## Winter 2024
+- **Week 2:** *Coppersmith's Method*. Presented by Danniell. [Slides](https://docs.google.com/presentation/d/1i7ksbykNTPPgIxGUkq10sCzxX-ffoRkWo12LFuowFO4/edit?usp=sharing)
+- **Week 3:** *Heap Binary Exploitation*. Presented by Alex. [Slides](https://docs.google.com/presentation/d/1HjBZ1Kk2yhRtl68D7GKET89Kpr0ZGbIlwSUBn703bL8/edit?usp=sharing)
+- **Week 8:** *Concolic Execution*. Presented by Jason. [Slides](https://docs.google.com/presentation/d/1RVSr9wCTgZFn0xUQECRiaY6x0WyvpEXoAlOFw5F69nY/edit?usp=sharing)
+- **Week 9:** *Browser Binary Exploitation*. Presented by Enzo. [Slides](https://docs.google.com/presentation/d/1SBslY15CV2-715cvSgcz6jvYU6MzT_Q40eyXNN0glOo/edit?usp=sharing)
+
+## Fall 2023
+- **Week 3:** *Intro to Pwn*. Presented by Alex. [Slides](https://docs.google.com/presentation/d/19kfTkXpQq8X_l4wjzm4r2hu0-LGGUexSPB3LX05F588/edit?usp=sharing)
+- **Week 5:** *Elliptic Curve Cryptography*. Presented by Jackson. [Slides](https://docs.google.com/presentation/d/1zcjVM_W_j-8jKxLmEzLQnSyXbcg4KUn_Vy4ATFSHkIg/edit?usp=sharing)
+- **Week 7:** *Kernel Pwn* Presented by Enzo. [Slides](https://docs.google.com/presentation/d/1TCIf5UDFYlWJ1_4qO6Dv9Ng-ZzPSO00NycGUy-0hVag/edit?usp=sharing)
+- **Week 9:** *Garbled Circuits* Presented by Gary. [Slides](https://docs.google.com/presentation/d/1kYYWoGiSQNYNxYll2x_m2Vc8bW7uJypUjsELmvXHmGI/edit?usp=sharing)
+
 ## Spring 2023
 - **Week 2:** *Python Pickles*. Presented by Ronak. [Slides](https://docs.google.com/presentation/d/1IceWSC0CNsSMWmXYOWx7bg5YOlSekzMeDLJlfVOSrmQ/edit?usp=sharing)
 - **Week 3:** *Number Theory*. Presented by Vivek. [Slides](https://docs.google.com/presentation/d/1Egh12MdiS46oGohLJrHcXT4gIsFRs-HL45mxWoFUsEQ/edit?usp=sharing)
