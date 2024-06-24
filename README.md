@@ -18,8 +18,8 @@ This site is built using [Jekyll](https://jekyllrb.com/) and hosted on [GitHub P
 git clone https://github.com/pbrucla/pbrucla.github.io.git
 cd pbrucla.github.io
 ```
-2. Install all _Prerequisites_ and follow the _Instructions_ at [https://jekyllrb.com/docs/](https://jekyllrb.com/docs/)
-3. To build the site and make it available on a local server, run ```bundle exec jekyll serve``` and check out [http://localhost:4000](http://localhost:4000)
+2. Install [Docker](https://www.docker.com/products/docker-desktop/)
+3. Run `make serve` and check out [http://localhost:4000](http://localhost:4000)
 
 ## Contributing
 1. Before making any changes, run `git pull` to ensure your local repository is up to date.
