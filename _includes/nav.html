@@ -1,9 +1,4 @@
-<div class="nav-toggle hamburger-container enabled">
-    <input type="checkbox" class="hamburger-toggle" checked>
-    <div class="hamburger-button"></div>
-</div>
-
-<nav class="ope">
+<nav class="open">
     <div class="hex" role="img" aria-label="Navigation bar background graphic, styled like the address panel of a hex editor.">
         <ol>
             {%- for i in (0..256) -%}
@@ -25,13 +20,41 @@
             </li>
         {%- endfor -%}
     </ul>
-</div>
 
 </nav>
 
-<script>
-    const navOpener = document.querySelector('.nav-toggle');
-    const navClasses = document.querySelector('nav').classList;
+<div class="nav-toggle hamburger-container">
+    <div class="hamburger-button"></div>
+</div>
 
-    navOpener.addEventListener('click', () => navClasses.contains('open') ? navClasses.add('open') : navClasses.remove('open'));
+
+<script>
+    const responsiveNavThreshold = 500;
+    const navOpener = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('nav');
+
+    const toggle = (cl, attr) => cl.contains(attr) ? cl.remove(attr) : cl.add(attr);
+
+    navOpener.addEventListener('click', () => {
+        toggle(nav.classList, 'open');
+    });
+
+    let enabled = false;
+
+    const setResponsive = () => {
+        if (window.innerWidth < responsiveNavThreshold) {
+            if (enabled) return;
+            enabled = true;
+            nav.classList.remove('open');
+            navOpener.classList.add('enabled');
+        }
+        else {
+            if (!enabled) return;
+            enabled = false;
+            nav.classList.add('open');
+            navOpener.classList.remove('enabled');
+        }
+    };
+    setResponsive();
+    window.addEventListener('resize', setResponsive);
 </script>

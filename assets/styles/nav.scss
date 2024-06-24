@@ -1,31 +1,30 @@
-nav:not(.open) > * {
-    display: none;
-}
-
+// when it is opened, a sliding effect will be created
 nav:not(.open) {
-    padding: 0;
+    transform: translateX(-100%);
 }
 
-body:has(nav.open) .nav-toggle {
+.nav-toggle:not(.enabled) {
     display: none;
 }
 
 .nav-toggle {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    padding: 1.25rem 0.5rem;
-    background: var(--cyber-dark-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    top: 0.25rem;
+    left: 0.25rem;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    // below means 90% cyber-yellow, 10% black
+    background: color-mix(in srgb, var(--cyber-yellow) 90%, black);
 }
 
 /* yes this hamburger code is stolen directly from myself @ lactf ~ andrew */
 /* heehee i stole this hamburger code from andrew @ acmcyber.com ~ ronak */
-
-.hamburger-toggle {
-  display: none;
-}
 
 .hamburger-button {
   &,
@@ -37,7 +36,7 @@ body:has(nav.open) .nav-toggle {
     width: 30px;
     background-color: white;
     border-radius: 2px;
-    transition: transform ease-out;
+    transition: transform var(--arcimation);
   }
 
   &::before {
@@ -51,17 +50,17 @@ body:has(nav.open) .nav-toggle {
   }
 }
 
-.hamburger-toggle:checked {
-  & ~ .hamburger-container .hamburger-button::before {
+body:has(nav.open) {
+  .hamburger-button::before {
     margin-top: 0px;
     transform: rotate(405deg);
   }
 
-  & ~ .hamburger-container .hamburger-button {
+  .hamburger-button {
     background: transparent;
   }
 
-  & ~ .hamburger-container .hamburger-button::after {
+  .hamburger-button::after {
     margin-top: 0px;
     transform: rotate(-405deg);
   }
@@ -78,6 +77,7 @@ nav {
     padding: 1rem 0rem 0rem 1.75ch;
     -webkit-padding-start: 0.4rem;
     width: calc(var(--nav-width) - 2rem);
+    transition: var(--arcimation);
 
     div.hex {
         position: absolute;

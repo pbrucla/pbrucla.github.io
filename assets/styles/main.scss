@@ -1,9 +1,10 @@
+// set a margin-left on content when navbar is open
 body:has(nav.open) .content {
     margin-left: var(--nav-width);
 }
 
 body:has(.nav-toggle.enabled) {
-    margin-top: 0.125rem;
+    margin-top: 1rem;
 }
 
 .content {

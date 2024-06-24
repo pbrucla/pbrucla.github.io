@@ -17,6 +17,7 @@ body {
   --nav-footer-line-height: calc(var(--nav-footer-line-height-multiplier) * var(--nav-footer-font-size));
   --cyber-yellow: #FFBD3F;
   --cyber-dark-grey: #2c2c2c;
+  --arcimation: 400ms cubic-bezier(.23,1,.32,1);
 }
 
 body, p, code {
