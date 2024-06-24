@@ -1,3 +1,72 @@
+nav:not(.open) > * {
+    display: none;
+}
+
+nav:not(.open) {
+    padding: 0;
+}
+
+body:has(nav.open) .nav-toggle {
+    display: none;
+}
+
+.nav-toggle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    padding: 1.25rem 0.5rem;
+    background: var(--cyber-dark-grey);
+}
+
+/* yes this hamburger code is stolen directly from myself @ lactf ~ andrew */
+/* heehee i stole this hamburger code from andrew @ acmcyber.com ~ ronak */
+
+.hamburger-toggle {
+  display: none;
+}
+
+.hamburger-button {
+  &,
+  &::before,
+  &::after {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    background-color: white;
+    border-radius: 2px;
+    transition: transform ease-out;
+  }
+
+  &::before {
+    content: "";
+    margin-top: -8px;
+  }
+
+  &::after {
+    content: "";
+    margin-top: 8px;
+  }
+}
+
+.hamburger-toggle:checked {
+  & ~ .hamburger-container .hamburger-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+
+  & ~ .hamburger-container .hamburger-button {
+    background: transparent;
+  }
+
+  & ~ .hamburger-container .hamburger-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+}
+
 nav {
     --nav-inner-width: 8ch;
 

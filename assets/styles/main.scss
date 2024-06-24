@@ -1,9 +1,16 @@
+body:has(nav.open) .content {
+    margin-left: var(--nav-width);
+}
+
+body:has(.nav-toggle.enabled) {
+    margin-top: 0.125rem;
+}
+
 .content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
-    margin-left: var(--nav-width);
 
     main {
         padding: 2rem 7%;
