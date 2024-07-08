@@ -8,7 +8,7 @@ tags: misc crypto pyjail
 
 # PyCalc
 
-Writeup by [r2uwu2](https://github.com/r2dev2) from [PBR | UCLA](https://pbr.acmcyber.com).
+Writeup by [r2uwu2](https://github.com/r2dev2) from [PBR \| UCLA](https://pbr.acmcyber.com).
 
 This is also published on [hackmd](https://hackmd.io/@r2dev2/r1lrXzLUC).
 
