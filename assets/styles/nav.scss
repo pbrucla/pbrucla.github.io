@@ -20,7 +20,12 @@ nav:not(.open) {
     padding: 0.5rem;
     font-size: 2rem;
     // below means 90% cyber-yellow, 10% black
-    background: color-mix(in srgb, var(--cyber-yellow) 90%, black);
+    // commenting out below as hamburger button looks better without a button
+    // background: color-mix(in srgb, var(--cyber-yellow) 90%, black);
+}
+
+.nav-toggle:hover {
+    cursor: pointer;
 }
 
 /* yes this hamburger code is stolen directly from myself @ lactf ~ andrew */
