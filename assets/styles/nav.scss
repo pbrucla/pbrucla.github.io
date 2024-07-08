@@ -1,3 +1,76 @@
+// when it is opened, a sliding effect will be created
+nav:not(.open) {
+    transform: translateX(-100%);
+}
+
+.nav-toggle:not(.enabled) {
+    display: none;
+}
+
+.nav-toggle {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    top: 0.25rem;
+    left: 0.25rem;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    // below means 90% cyber-yellow, 10% black
+    // commenting out below as hamburger button looks better without a button
+    // background: color-mix(in srgb, var(--cyber-yellow) 90%, black);
+}
+
+.nav-toggle:hover {
+    cursor: pointer;
+}
+
+/* yes this hamburger code is stolen directly from myself @ lactf ~ andrew */
+/* heehee i stole this hamburger code from andrew @ acmcyber.com ~ ronak */
+
+.hamburger-button {
+  &,
+  &::before,
+  &::after {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    background-color: white;
+    border-radius: 2px;
+    transition: transform var(--arcimation);
+  }
+
+  &::before {
+    content: "";
+    margin-top: -8px;
+  }
+
+  &::after {
+    content: "";
+    margin-top: 8px;
+  }
+}
+
+body:has(nav.open) {
+  .hamburger-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+
+  .hamburger-button {
+    background: transparent;
+  }
+
+  .hamburger-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+}
+
 nav {
     --nav-inner-width: 8ch;
 
@@ -9,6 +82,7 @@ nav {
     padding: 1rem 0rem 0rem 1.75ch;
     -webkit-padding-start: 0.4rem;
     width: calc(var(--nav-width) - 2rem);
+    transition: var(--arcimation);
 
     div.hex {
         position: absolute;
