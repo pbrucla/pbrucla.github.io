@@ -4,7 +4,7 @@ body:has(nav.open) .content {
 }
 
 body:has(.nav-toggle.enabled) {
-    margin-top: 1rem;
+    padding-top: 1rem;
 }
 
 .content {
