@@ -1,39 +1,45 @@
+- name: Andrew Kuai
+  photo: arcblroth.png
+  role: director, web, misc
+  github: Arc-blroth
+  linkedin: arcblroth
+
+- name: Mark Epstein
+  photo: mark.jpg
+  role: director, rev, pwn
+  github: epsteinmark
+  linkedin: markepstein134
+  
+- name: Ronak Badhe
+  photo: r2dev2.webp
+  role: director, web, misc
+  github: r2dev2
+  website: https://r2dev2.github.io
+
 - name: Benson Liu
   photo: bliutech.png
-  role: director, web, misc
+  role: advisor, web, misc
   website: https://bliu.tech
   github: bliutech
   linkedin: bliutech
 
 - name: Jason An
   photo: jason.png
-  role: captain, rev
+  role: rev
   website: https://aplet.me
   github: Aplet123
 
-- name: Andrew Kuai
-  photo: arcblroth.png
-  role: captain, web, misc
-  github: Arc-blroth
-  linkedin: arcblroth
-
 - name: Alec Machlis
   photo: alec.jpg
-  role: captain, misc
+  role: web, misc
   github: burturt
   linkedin: alec-m
 
 - name: Arnav Vora
   photo: arnav.jpg
-  role: captain, crypto
+  role: crypto
   github: AVDestroyer
   linkedin: arnav-vora
-
-- name: Ronak Badhe
-  photo: r2dev2.webp
-  role: web, misc
-  github: r2dev2
-  website: https://r2dev2.github.io
 
 - name: Vera Peker
   photo: vera.jpeg
@@ -54,6 +60,30 @@
   website: https://www.alexyzhang.dev
 
 - name: Joshua Zhu
+  photo: joshua-photo-square.jpg
   role: crypto
   github: joshuazhu17
   linkedin: joshuazhu17
+
+- name: Danniell Xu
+  role: crypto
+  github: TheOtherRedGuy
+  linkedin: danniell-xu
+
+- name: Rathul Anand
+  photo: rathul.png
+  role: crypto
+  github: rathull
+  linkedin: rathul
+
+- name: Salma Alandary
+  photo: salma.jpg
+  role: advisor, rev
+  github: ssalandary
+  linkedin: ssalandary
+
+- name: Stewart Kwok
+  photo: stewart.jpeg
+  role: web
+  github: stewartkwokca
+  linkedin: stewartkwok
