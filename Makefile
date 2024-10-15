@@ -1,5 +1,6 @@
 JEKYLL_VERSION := 4.2.2
 docker = docker
+PWD = $(shell pwd)
 
 build:
 	${docker} run --rm --volume="${PWD}:/srv/jekyll" -it jekyll/jekyll:${JEKYLL_VERSION} jekyll build
