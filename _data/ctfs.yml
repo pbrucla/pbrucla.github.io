@@ -1,9 +1,167 @@
 ctfs:
+- year: 2024
+  ctfs:
+  - name: GlacierCTF 2024
+    id: 2402
+    place: 6
+  - name: 1337UP LIVE CTF
+    id: 2446
+    place: 24
+  - name: BlockCTF 2024 (Formerly SquareCTF)
+    id: 2517
+    place: 5
+  - name: CSAW CTF Final Round 2024
+    id: 2567
+    place: 2
+  - name: Hack.lu CTF 2024
+    id: 2438
+    place: 71
+  - name: BRICS+ CTF Quals 2024
+    id: 2389
+    place: 8
+  - name: BuckeyeCTF 2024
+    id: 2449
+    place: 9
+  - name: m0leCon CTF 2025 Teaser
+    id: 2440
+    place: 28
+  - name: CSAW CTF Qualification Round 2024
+    id: 2398
+    place: 7
+  - name: idekCTF 2024
+    id: 2304
+    place: 149
+  - name: corCTF 2024
+    id: 2282
+    place: 59
+  - name: DownUnderCTF 2024
+    id: 2284
+    place: 120
+  - name: UIUCTF 2024
+    id: 2275
+    place: 57
+  - name: Google Capture The Flag 2024
+    id: 2296
+    place: 76
+  - name: N0PSctf
+    id: 2358
+    place: 14
+  - name: GPN CTF 2024
+    id: 2257
+    place: 290
+  - name: "\xE5ngstromCTF 2024"
+    id: 2375
+    place: 62
+  - name: TJCTF 2024
+    id: 2321
+    place: 56
+  - name: San Diego CTF 2024
+    id: 2325
+    place: 34
+  - name: squ1rrel CTF 2024
+    id: 2370
+    place: 23
+  - name: UMDCTF 2024
+    id: 2323
+    place: 35
+  - name: Grey Cat The Flag 2024 Qualifiers
+    id: 2242
+    place: 12
+  - name: b01lers CTF 2024
+    id: 2250
+    place: 9
+  - name: CursedCTF 2024 Quals
+    id: 2239
+    place: 14
+  - name: UTCTF 2024
+    id: 2302
+    place: 108
+  - name: LINE CTF 2024
+    id: 2119
+    place: 36
+  - name: 'Cyber Apocalypse 2024: Hacker Royale'
+    id: 2255
+    place: 215
+  - name: osu!gaming CTF 2024
+    id: 2165
+    place: 50
+  - name: bi0sCTF 2024
+    id: 2117
+    place: 58
+  - name: TetCTF 2024
+    id: 2212
+    place: 22
+  - name: Mapna CTF 2024
+    id: 2205
+    place: 9
+  - name: Insomni'hack teaser 2024
+    id: 2139
+    place: 109
+  - name: UofTCTF 2024
+    id: 2219
+    place: 16
+  - name: IrisCTF 2024
+    id: 2085
+    place: 25
 - year: 2023
   ctfs:
   - name: LA CTF 2023
     id: 1732
     place: organizers
+  - name: ASIS CTF Finals 2023
+    id: 1953
+    place: 28
+  - name: BackdoorCTF 2023
+    id: 2153
+    place: 26
+  - name: NewportBlakeCTF 2023
+    id: 2072
+    place: 9
+  - name: GlacierCTF 2023
+    id: 1992
+    place: 39
+  - name: Square CTF 2023
+    id: 2111
+    place: 2
+  - name: 1337UP LIVE CTF
+    id: 2134
+    place: 45
+  - name: CSAW CTF Final Round 2023
+    id: 2091
+    place: 16
+  - name: LakeCTF Quals 23
+    id: 2069
+    place: 40
+  - name: BuckeyeCTF 2023
+    id: 2074
+    place: 38
+  - name: CSAW CTF Qualification Round 2023
+    id: 2087
+    place: 11
+  - name: PatriotCTF 2023
+    id: 2030
+    place: 135
+  - name: SekaiCTF 2023
+    id: 1923
+    place: 97
+  - name: corCTF 2023
+    id: 1928
+    place: 41
+  - name: UIUCTF 2023
+    id: 1899
+    place: 39
+  - name: Google Capture The Flag 2023
+    id: 1929
+    place: 104
+  - name: TJCTF 2023
+    id: 1865
+    place: 35
+  - name: VolgaCTF 2023 Qualifier
+    id: 1847
+    place: 55
+  - name: San Diego CTF 2023
+    id: 1910
+    place: 2
   - name: "\xE5ngstromCTF 2023"
     id: 1859
     place: 65
