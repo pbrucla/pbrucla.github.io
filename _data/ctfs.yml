@@ -1,6 +1,44 @@
 ctfs:
+- year: 2025
+  ctfs:
+  - name: UMDCTF 2025
+    id: 2563
+    place: 13
+  - name: b01lers CTF 2025
+    id: 2652
+    place: 1
+  - name: squ1rrel CTF 2025
+    id: 2708
+    place: 6
+  - name: DiceCTF 2025 Quals
+    id: 2617
+    place: 29
+  - name: WolvCTF 2025
+    id: 2579
+    place: 26
+  - name: KalmarCTF 2025
+    id: 2599
+    place: 84
+  - name: TRX CTF 2025
+    id: 2654
+    place: 26
+  - name: Srdnlen CTF 2025
+    id: 2576
+    place: 16
+  - name: UofTCTF 2025
+    id: 2570
+    place: 34
+  - name: IrisCTF 2025
+    id: 2503
+    place: 102
 - year: 2024
   ctfs:
+  - name: niteCTF 2024
+    id: 2461
+    place: 25
+  - name: LakeCTF Quals 24-25
+    id: 2502
+    place: 92
   - name: GlacierCTF 2024
     id: 2402
     place: 6
