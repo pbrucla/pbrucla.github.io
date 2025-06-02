@@ -1,6 +1,15 @@
 ctfs:
 - year: 2025
   ctfs:
+  - name: Grey Cat The Flag 2025
+    id: 2765
+    place: 121
+  - name: BYUCTF 2025
+    id: 2715
+    place: 88
+  - name: San Diego CTF 2025
+    id: 2785
+    place: 2
   - name: UMDCTF 2025
     id: 2563
     place: 13
