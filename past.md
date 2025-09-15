@@ -3,9 +3,19 @@ layout: default
 description: Some practices we have run in the past!
 ---
 
-# Past Practices
+# Past Talks
 
-Here are some practices we have run in the past!
+Here's an archive of talks we've run in the past!
+
+
+## Winter 2025
+- **Week 4:** *Mutation XSS*. Presented by Benson. [Slides](https://docs.google.com/presentation/d/1kJLcPEOGh-OJJ8QWAak04AFVK_KeTQCWraGImmcx4BQ/edit?usp=sharing)
+
+
+## Fall 2024 
+- **Week 3:** *OSINT*. Presented by Gary. [Slides](https://l.acmcyber.com/f24-w3-pbr)
+- **Week 5:** *Prototype Pollution*. Presented by Ronak. [Slides](https://docs.google.com/presentation/d/1kEVEwnlyVtfi_Eo458whzV5wNwU1he7VN_NGCDQO-Rc/edit?usp=sharing)
+- **Week 7:** *Cross-Cache Attacks*. Presented by Enzo. [Slides](https://l.acmcyber.com/f24-w7-pbr)
 
 ## Spring 2024
 - **Week 2:** *LCGs and Minecraft Seedfinding*. Presented by Arnav. [Slides](https://docs.google.com/presentation/d/1tGAz_zIpPk4tgZ4InwrgybrHme5BIDwDmLxjhOOrEnA/edit?usp=sharing)

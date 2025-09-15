@@ -9,36 +9,97 @@ description: The team members of Psi Beta Rho!
 
 <div class="team-flex-container">
     {% for member in site.data.members %}
-        <div class="member-flex-item">
-            <img src="assets/images/members/{% if member.photo %}{{ member.photo }}{% else %}{{ 'logo-placeholder.png' }}{% endif %}" class="profile-image"/>
+        {% unless member.role contains 'alumni' %}
+            <div class="member-flex-item">
+                <img src="assets/images/members/{% if member.photo %}{{ member.photo }}{% else %}{{ 'logo-placeholder.png' }}{% endif %}" class="profile-image"/>
 
-            <p class="member-name"><strong>{{ member.name }}</strong></p>
-            <p class="member-role"><i>{{ member.role }}</i></p>
+                <p class="member-name"><strong>{{ member.name }}</strong></p>
+                {% assign roles = member.role | split: ',' %}
+                {% assign clean_roles = '' %}
+                {% for r in roles %}
+                    {% assign trimmed = r | strip %}
+                    {% unless trimmed == 'alumni' %}
+                        {% if clean_roles != '' %}
+                            {% assign clean_roles = clean_roles | append: ', ' %}
+                        {% endif %}
+                        {% assign clean_roles = clean_roles | append: trimmed %}
+                    {% endunless %}
+                {% endfor %}
+                <p class="member-role"><i>{{ clean_roles }}</i></p>
 
-            {% if member.website %}
-                <a href="{{ member.website }}">
-                    <img class="logo" src="assets/images/link.png" />
-                </a>
-            {% endif %}
+                {% if member.website %}
+                    <a href="{{ member.website }}">
+                        <img class="logo" src="assets/images/link.png" />
+                    </a>
+                {% endif %}
 
-            {% if member.github %}
-                <a href="https://github.com/{{ member.github }}">
-                    <img class="logo" src="assets/images/github.png" />
-                </a>
-            {% endif %}
+                {% if member.github %}
+                    <a href="https://github.com/{{ member.github }}">
+                        <img class="logo" src="assets/images/github.png" />
+                    </a>
+                {% endif %}
 
-            {% if member.linkedin %}
-                <a href="https://linkedin.com/in/{{ member.linkedin }}">
-                    <img class="logo" src="assets/images/linkedin.png" />
-                </a>
-            {% endif %}
+                {% if member.linkedin %}
+                    <a href="https://linkedin.com/in/{{ member.linkedin }}">
+                        <img class="logo" src="assets/images/linkedin.png" />
+                    </a>
+                {% endif %}
 
-            {% if member.instagram %}
-                <a href="https://instagram.com/{{ member.instagram }}">
-                    <img class="logo" src="assets/images/instagram.png" />
-                </a>
-            {% endif %}
-            
-        </div>
+                {% if member.instagram %}
+                    <a href="https://instagram.com/{{ member.instagram }}">
+                        <img class="logo" src="assets/images/instagram.png" />
+                    </a>
+                {% endif %}
+            </div>
+        {% endunless %}
+    {% endfor %}
+</div>
+
+<h2>Alumni</h2>
+<div class="team-flex-container">
+    {% for member in site.data.members %}
+        {% if member.role contains 'alumni' %}
+            <div class="member-flex-item">
+                <img src="assets/images/members/{% if member.photo %}{{ member.photo }}{% else %}{{ 'logo-placeholder.png' }}{% endif %}" class="profile-image"/>
+
+                <p class="member-name"><strong>{{ member.name }}</strong></p>
+                {% assign roles = member.role | split: ',' %}
+                {% assign clean_roles = '' %}
+                {% for r in roles %}
+                    {% assign trimmed = r | strip %}
+                    {% unless trimmed == 'alumni' %}
+                        {% if clean_roles != '' %}
+                            {% assign clean_roles = clean_roles | append: ', ' %}
+                        {% endif %}
+                        {% assign clean_roles = clean_roles | append: trimmed %}
+                    {% endunless %}
+                {% endfor %}
+                <p class="member-role"><i>{{ clean_roles }}</i></p>
+
+                {% if member.website %}
+                    <a href="{{ member.website }}">
+                        <img class="logo" src="assets/images/link.png" />
+                    </a>
+                {% endif %}
+
+                {% if member.github %}
+                    <a href="https://github.com/{{ member.github }}">
+                        <img class="logo" src="assets/images/github.png" />
+                    </a>
+                {% endif %}
+
+                {% if member.linkedin %}
+                    <a href="https://linkedin.com/in/{{ member.linkedin }}">
+                        <img class="logo" src="assets/images/linkedin.png" />
+                    </a>
+                {% endif %}
+
+                {% if member.instagram %}
+                    <a href="https://instagram.com/{{ member.instagram }}">
+                        <img class="logo" src="assets/images/instagram.png" />
+                    </a>
+                {% endif %}
+            </div>
+        {% endif %}
     {% endfor %}
 </div>
