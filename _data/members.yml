@@ -1,27 +1,26 @@
+- name: Roshni Dave
+  photo: roshni.jpeg
+  role: director, misc
+  github: roshda
+  linkedin: roshnidave
+
+- name: Teong Seng Tan
+  photo: ts.jpeg
+  role: director, pwn
+  github: asdiml
+  linkedin: ts-tan
+
 - name: Andrew Kuai
   photo: arcblroth.png
-  role: director, web, misc
+  role: web, misc
   github: Arc-blroth
   linkedin: arcblroth
 
-- name: Mark Epstein
-  photo: mark.jpg
-  role: director, rev, pwn
-  github: epsteinmark
-  linkedin: markepstein134
-  
 - name: Ronak Badhe
   photo: r2dev2.webp
-  role: director, web, misc
+  role: web, misc
   github: r2dev2
   website: https://r2dev2.github.io
-
-- name: Benson Liu
-  photo: bliutech.png
-  role: advisor, web, misc
-  website: https://bliu.tech
-  github: bliutech
-  linkedin: bliutech
 
 - name: Jason An
   photo: jason.png
@@ -29,35 +28,30 @@
   website: https://aplet.me
   github: Aplet123
 
+- name: Arnav Vora
+  photo: arnav.jpg
+  role: crypto
+  github: AVDestroyer
+  linkedin: arnav-vora
+  
+- name: Cathleen Qiao
+  photo: cathy.jpeg
+  role: pwn, web, misc
+  github: zink-ed
+  linkedin: cathleenqiao
+
+
 - name: Alec Machlis
   photo: alec.jpg
   role: web, misc
   github: burturt
   linkedin: alec-m
 
-- name: Arnav Vora
-  photo: arnav.jpg
-  role: crypto
-  github: AVDestroyer
-  linkedin: arnav-vora
-
 - name: Vera Peker
   photo: vera.jpeg
   role: osint
   github: verapeker
   linkedin: verapeker
-
-- name: Gary Song
-  photo: gary.png
-  role: crypto
-  github: freed2003
-  linkedin: g-song
-
-- name: Alexander Zhang
-  photo: kaiphait.webp
-  role: pwn
-  github: bkrl
-  website: https://www.alexyzhang.dev
 
 - name: Joshua Zhu
   photo: joshua-photo-square.jpg
@@ -66,19 +60,20 @@
   linkedin: joshuazhu17
 
 - name: Danniell Xu
+  photo: danniell.png
   role: crypto
   github: TheOtherRedGuy
   linkedin: danniell-xu
 
 - name: Rathul Anand
   photo: rathul.png
-  role: crypto
+  role: crypto, alumni
   github: rathull
   linkedin: rathul
 
 - name: Salma Alandary
   photo: salma.jpg
-  role: advisor, rev
+  role: rev, alumni
   github: ssalandary
   linkedin: ssalandary
 
@@ -87,3 +82,35 @@
   role: web
   github: stewartkwokca
   linkedin: stewartkwok
+
+- name: Gary Song
+  photo: gary.png
+  role: crypto, alumni
+  github: freed2003
+  linkedin: g-song
+
+- name: Christopher Milan
+  role: pwn, alumni
+  github: sirhcm
+  linkedin: chrismilan
+
+
+- name: Alexander Zhang
+  photo: kaiphait.webp
+  role: pwn, alumni
+  github: bkrl
+  website: https://www.alexyzhang.dev
+
+- name: Benson Liu
+  photo: bliutech.png
+  role: web, misc, alumni
+  website: https://bliu.tech
+  github: bliutech
+  linkedin: bliutech
+  
+- name: Mark Epstein
+  photo: mark.jpg
+  role: rev, pwn, alumni
+  github: epsteinmark
+  linkedin: markepstein134
+
