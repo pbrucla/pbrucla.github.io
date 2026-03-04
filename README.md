@@ -40,9 +40,9 @@ git push
 ## Contact
 If you see any issues or have any questions, feel free to contact us or open a pull request!
 
-**Email**: uclacyber@gmail.com
+**Email**: uclacyber+pbr@gmail.com
 
-**Discord**: [https://discord.gg/j9dgf2q](https://discord.gg/j9dgf2q)
+**Discord**: [https://acmcyber.com/discord](https://acmcyber.com/discord)
 
 ## Acknowledgments
 This website would not have been possible without the many contributions from our members. Thank you to Benson Liu, Andrew Kuai, Joshua Zhu, Juliet Zhang, Jason An, Ronak Badhe, Konstantin Tzantchev, & Joshua Yin for their contributions to this website! Special thanks to Juliet Zhang for helping to put together the original design! For a full list of contributors, check out the [contributors page](https://github.com/pbrucla/pbrucla.github.io/graphs/contributors).
